@@ -1,0 +1,2076 @@
+<!DOCTYPE html>
+<!-- saved from url=(0082)https://13000-iqwupcviz46koxhqkmka8-3844e1b6.preview.happyseeds.space/virella.html -->
+<html lang="fr" dir="ltr"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><script src="./Virella — Maroquinerie de 15_files/preview-runtime.js.download"></script>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Virella — Maroquinerie de Luxe</title>
+<meta name="description" content="Virella — sacs à main de luxe, futuriste et intemporel. Commandez en ligne, paiement à la livraison.">
+<link rel="preconnect" href="https://fonts.googleapis.com/">
+<link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+<link href="./Virella — Maroquinerie de 15_files/css2" rel="stylesheet">
+<style>
+/* ============================================================
+   VIRELLA — Design tokens
+   Palette: obsidian base, champagne gold + holographic teal
+   accents, pearl surface, rose-mauve warmth.
+   ============================================================ */
+:root{
+  --obsidian:#0b0b10;
+  --obsidian-2:#14131b;
+  --gold:#c9a24b;
+  --gold-light:#e8cf8a;
+  --teal:#7de0d3;
+  --mauve:#8a5a6b;
+  --pearl:#f3efe8;
+  --pearl-2:#fbf8f3;
+  --ink:#1a1710;
+  --ink-soft:rgba(26,23,16,.62);
+  --line:rgba(201,162,75,.28);
+  --radius:22px;
+  --shadow-lux:0 30px 60px -20px rgba(11,11,16,.35);
+  --ff-display:'Playfair Display', 'Amiri', serif;
+  --ff-body:'Manrope','Tajawal',sans-serif;
+}
+html[lang="ar"]{
+  --ff-display:'Amiri','Playfair Display', serif;
+  --ff-body:'Tajawal','Manrope',sans-serif;
+}
+*{box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{
+  margin:0;
+  background:var(--pearl-2);
+  color:var(--ink);
+  font-family:var(--ff-body);
+  -webkit-font-smoothing:antialiased;
+  overflow-x:hidden;
+}
+html[dir="rtl"] body{letter-spacing:0;}
+img{max-width:100%;display:block;}
+a{color:inherit;text-decoration:none;}
+button{font-family:inherit;cursor:pointer;}
+.container{max-width:1240px;margin:0 auto;padding:0 24px;}
+.eyebrow{
+  font-size:.72rem;
+  letter-spacing:.28em;
+  text-transform:uppercase;
+  color:var(--gold);
+  font-weight:700;
+}
+html[dir="rtl"] .eyebrow{letter-spacing:.05em;}
+.heading-xl{
+  font-family:var(--ff-display);
+  font-weight:700;
+  line-height:1.05;
+  letter-spacing:-.01em;
+}
+.thread{
+  height:2px;
+  background:linear-gradient(90deg, transparent, var(--gold) 20%, var(--teal) 50%, var(--gold) 80%, transparent);
+  background-size:200% 100%;
+  animation:threadMove 6s linear infinite;
+  border-radius:2px;
+}
+@keyframes threadMove{
+  0%{background-position:0% 0;}
+  100%{background-position:200% 0;}
+}
+@media (prefers-reduced-motion: reduce){
+  *{animation-duration:.001s !important; animation-iteration-count:1 !important; scroll-behavior:auto !important;}
+}
+.visually-hidden{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0);}
+
+/* ---------- Header ---------- */
+#site-header{
+  position:sticky; top:0; z-index:60;
+  background:rgba(11,11,16,.72);
+  backdrop-filter:blur(18px) saturate(140%);
+  -webkit-backdrop-filter:blur(18px) saturate(140%);
+  border-bottom:1px solid rgba(201,162,75,.18);
+  transition:background .3s ease;
+}
+.header-row{
+  display:flex; align-items:center; justify-content:space-between;
+  padding:14px 24px; gap:20px;
+}
+.brand{display:flex; align-items:center; gap:10px;}
+.brand-logo{
+  width:42px; height:42px; border-radius:50%;
+  border:1px solid var(--line);
+  object-fit:cover;
+  background:var(--obsidian-2);
+}
+.brand-name{
+  font-family:var(--ff-display); color:var(--pearl);
+  font-size:1.2rem; letter-spacing:.14em; font-weight:700;
+}
+html[dir="rtl"] .brand-name{letter-spacing:0;}
+.main-nav{display:flex; gap:28px; list-style:none; margin:0; padding:0;}
+.main-nav a{
+  font-size:.85rem; letter-spacing:.04em; color:rgba(243,239,232,.72);
+  position:relative; padding:4px 0; transition:color .25s ease;
+}
+.main-nav a::after{
+  content:''; position:absolute; left:0; bottom:-2px; width:0; height:1px;
+  background:linear-gradient(90deg,var(--gold),var(--teal));
+  transition:width .3s ease;
+}
+.main-nav a:hover{color:var(--pearl);}
+.main-nav a:hover::after{width:100%;}
+.header-actions{display:flex; align-items:center; gap:14px;}
+.icon-btn{
+  background:none; border:none; color:rgba(243,239,232,.75);
+  display:grid; place-items:center; width:36px; height:36px;
+  border-radius:50%; position:relative; transition:.25s ease;
+}
+.icon-btn:hover{color:var(--gold); background:rgba(201,162,75,.12);}
+.icon-badge{
+  position:absolute; top:-2px; right:-2px; background:var(--gold);
+  color:var(--obsidian); font-size:.62rem; font-weight:800;
+  width:16px; height:16px; border-radius:50%; display:grid; place-items:center;
+}
+html[dir="rtl"] .icon-badge{right:auto; left:-2px;}
+.lang-toggle{
+  display:flex; border:1px solid var(--line); border-radius:999px; overflow:hidden;
+}
+.lang-toggle button{
+  background:none; border:none; color:rgba(243,239,232,.6);
+  padding:6px 12px; font-size:.72rem; font-weight:700; letter-spacing:.05em;
+  transition:.25s ease;
+}
+.lang-toggle button.active{background:var(--gold); color:var(--obsidian);}
+.nav-toggle{display:none; background:none; border:none; color:var(--pearl);}
+.mobile-nav{display:none; flex-direction:column; padding:10px 24px 18px; gap:4px; background:rgba(11,11,16,.96);}
+.mobile-nav a{padding:10px 0; color:rgba(243,239,232,.8); border-bottom:1px solid rgba(255,255,255,.06); font-size:.9rem;}
+.mobile-nav.open{display:flex;}
+
+@media (max-width:920px){
+  .main-nav{display:none;}
+  .nav-toggle{display:grid; place-items:center;}
+}
+
+/* ---------- Hero : Night Sky ---------- */
+#hero{
+  position:relative;
+  background:
+    radial-gradient(ellipse 900px 500px at 50% 0%, rgba(125,224,211,.10), transparent 60%),
+    radial-gradient(ellipse 1200px 800px at 50% 110%, #171523 0%, transparent 60%),
+    linear-gradient(180deg, #060509 0%, #0b0a12 35%, #0b0b10 70%, #08070a 100%);
+  padding:150px 24px 160px; overflow:hidden; text-align:center;
+  isolation:isolate;
+}
+#hero::before{
+  /* faint horizon glow, like distant city / dawn light behind the night */
+  content:''; position:absolute; left:50%; bottom:-10%; transform:translateX(-50%);
+  width:140%; height:340px; z-index:0; pointer-events:none;
+  background:radial-gradient(ellipse at center, rgba(201,162,75,.14), transparent 70%);
+}
+#hero-sky{
+  position:absolute; inset:0; z-index:0; display:block; width:100%; height:100%;
+}
+#hero .particles{position:absolute; inset:0; pointer-events:none; z-index:1;}
+#hero .particle{
+  position:absolute; border-radius:50%;
+  background:radial-gradient(circle, var(--gold-light), transparent 70%);
+  opacity:.55; filter:blur(.5px);
+  animation:floaty 8s ease-in-out infinite;
+}
+@keyframes floaty{
+  0%,100%{transform:translateY(0) translateX(0);}
+  50%{transform:translateY(-26px) translateX(10px);}
+}
+#hero .glow-orb{
+  position:absolute; width:560px; height:560px; border-radius:50%; z-index:0;
+  background:radial-gradient(circle, rgba(201,162,75,.16), rgba(125,224,211,.08) 55%, transparent 75%);
+  top:-200px; left:50%; transform:translateX(-50%);
+  animation:pulseGlow 5s ease-in-out infinite;
+  filter:blur(2px);
+}
+@keyframes pulseGlow{0%,100%{opacity:.55; transform:translateX(-50%) scale(1);} 50%{opacity:1; transform:translateX(-50%) scale(1.05);}}
+#hero .moon{
+  position:absolute; z-index:1; top:64px; left:50%; transform:translateX(-50%);
+  width:86px; height:86px; border-radius:50%;
+  background:radial-gradient(circle at 35% 32%, #fbf8f3 0%, var(--gold-light) 42%, var(--gold) 78%, rgba(201,162,75,.2) 100%);
+  box-shadow:0 0 40px 6px rgba(232,207,138,.45), 0 0 90px 30px rgba(125,224,211,.12);
+  opacity:0; animation:moonRise 2.4s ease-out .3s forwards;
+}
+@keyframes moonRise{
+  0%{opacity:0; transform:translateX(-50%) translateY(30px) scale(.7);}
+  100%{opacity:1; transform:translateX(-50%) translateY(0) scale(1);}
+}
+.hero-inner{position:relative; z-index:2; max-width:820px; margin:0 auto;}
+.hero-eyebrow{
+  display:inline-flex; align-items:center; gap:8px;
+  border:1px solid var(--line); border-radius:999px; padding:8px 18px;
+  color:var(--gold-light); font-size:.72rem; letter-spacing:.24em; text-transform:uppercase;
+  background:rgba(201,162,75,.08); margin-bottom:28px;
+  box-shadow:0 0 0 1px rgba(201,162,75,.06), 0 8px 24px -8px rgba(201,162,75,.25);
+}
+html[dir="rtl"] .hero-eyebrow{letter-spacing:.03em;}
+.hero-title{
+  font-size:clamp(2.6rem, 6vw, 5.2rem); color:var(--pearl); margin:0 0 22px;
+  text-shadow:0 2px 40px rgba(201,162,75,.18);
+}
+.hero-title em{font-style:italic; background:linear-gradient(90deg,var(--gold-light),var(--teal)); -webkit-background-clip:text; background-clip:text; color:transparent;}
+.hero-sub{color:rgba(243,239,232,.68); font-size:1.05rem; max-width:520px; margin:0 auto 40px; line-height:1.7;}
+.hero-ctas{display:flex; gap:16px; justify-content:center; flex-wrap:wrap; margin-bottom:64px;}
+.btn{
+  border-radius:999px; padding:15px 34px; font-size:.85rem; font-weight:700;
+  letter-spacing:.05em; border:1px solid transparent; transition:transform .3s ease, box-shadow .3s ease, background .3s ease;
+  display:inline-flex; align-items:center; gap:8px;
+}
+.btn-primary{background:linear-gradient(120deg,var(--gold),var(--gold-light)); color:var(--obsidian); box-shadow:0 14px 30px -10px rgba(201,162,75,.55);}
+.btn-primary:hover{transform:translateY(-3px); box-shadow:0 20px 40px -12px rgba(201,162,75,.7);}
+.btn-ghost{background:rgba(255,255,255,.04); color:var(--pearl); border-color:rgba(243,239,232,.24); backdrop-filter:blur(6px);}
+.btn-ghost:hover{transform:translateY(-3px); border-color:var(--teal); color:var(--teal);}
+.hero-stats{display:flex; justify-content:center; gap:56px; flex-wrap:wrap;}
+.hero-stat b{display:block; font-family:var(--ff-display); font-size:1.7rem; color:var(--pearl);}
+.hero-stat span{font-size:.72rem; letter-spacing:.15em; text-transform:uppercase; color:rgba(243,239,232,.5);}
+
+/* ---------- Section shell ---------- */
+.section{padding:96px 24px;}
+.section-head{max-width:640px; margin:0 auto 52px; text-align:center;}
+.section-head h2{font-size:clamp(1.9rem,3.4vw,2.6rem); margin:12px 0 14px; color:var(--ink);}
+.section-head p{color:var(--ink-soft); font-size:.98rem; line-height:1.7;}
+.section-thread{width:70px; height:2px; margin:0 auto;}
+
+/* ---------- Filters ---------- */
+.filters{display:flex; gap:10px; justify-content:center; flex-wrap:wrap; margin-bottom:44px;}
+.filter-chip{
+  border:1px solid rgba(26,23,16,.14); background:#fff; color:var(--ink-soft);
+  border-radius:999px; padding:9px 20px; font-size:.78rem; font-weight:600; letter-spacing:.03em;
+  transition:.25s ease;
+}
+.filter-chip.active,.filter-chip:hover{background:var(--ink); color:var(--pearl); border-color:var(--ink);}
+
+/* ---------- Product grid ---------- */
+.product-grid{display:grid; grid-template-columns:repeat(auto-fill,minmax(258px,1fr)); gap:26px;}
+.card{
+  position:relative; background:#fff; border-radius:var(--radius); overflow:hidden;
+  border:1px solid rgba(26,23,16,.08); box-shadow:0 10px 26px -18px rgba(26,23,16,.35);
+  transition:transform .45s cubic-bezier(.2,.8,.2,1), box-shadow .45s ease, border-color .3s ease;
+  opacity:0; transform:translateY(26px);
+}
+.card.in-view{opacity:1; transform:translateY(0);}
+.card:hover{transform:translateY(-8px); box-shadow:var(--shadow-lux); border-color:rgba(201,162,75,.4);}
+.card-media{position:relative; aspect-ratio:4/5; overflow:hidden; background:var(--pearl);}
+.card-media img{width:100%; height:100%; object-fit:cover; transition:transform .7s ease;}
+.card:hover .card-media img{transform:scale(1.09);}
+.card-badge{
+  position:absolute; top:12px; inset-inline-start:12px; background:var(--obsidian); color:var(--pearl);
+  font-size:.6rem; letter-spacing:.1em; text-transform:uppercase; padding:5px 11px; border-radius:999px;
+}
+.wishlist-btn{
+  position:absolute; top:12px; inset-inline-end:12px; width:34px; height:34px; border-radius:50%;
+  background:rgba(255,255,255,.85); backdrop-filter:blur(4px); border:none; color:var(--ink-soft);
+  display:grid; place-items:center; transition:.25s ease;
+}
+.wishlist-btn.active{background:var(--mauve); color:#fff;}
+.card-quick{
+  position:absolute; left:12px; right:12px; bottom:12px; background:rgba(11,11,16,.85); color:var(--pearl);
+  border:none; border-radius:999px; padding:10px; font-size:.72rem; letter-spacing:.06em; text-transform:uppercase;
+  opacity:0; transform:translateY(10px); transition:.3s ease;
+}
+.card:hover .card-quick{opacity:1; transform:translateY(0);}
+.card-body{padding:18px 18px 20px;}
+.card-cat{font-size:.64rem; letter-spacing:.16em; text-transform:uppercase; color:var(--mauve); font-weight:700;}
+.card-name{font-family:var(--ff-display); font-size:1.15rem; margin:6px 0 4px; text-transform:capitalize;}
+.card-desc{font-size:.8rem; color:var(--ink-soft); margin:0 0 10px; display:-webkit-box; -webkit-line-clamp:2; -webkit-box-orient:vertical; overflow:hidden;}
+.card-stars{color:var(--gold); font-size:.75rem; margin-bottom:10px; letter-spacing:1px;}
+.card-price-row{display:flex; align-items:baseline; justify-content:space-between; margin-bottom:14px;}
+.card-price{font-family:var(--ff-display); font-size:1.3rem; font-weight:700;}
+.card-actions{display:flex; gap:8px;}
+.card-actions button{flex:1; border-radius:999px; padding:11px 8px; font-size:.72rem; font-weight:700; letter-spacing:.03em;}
+.btn-outline-dark{background:#fff; border:1px solid rgba(26,23,16,.18); color:var(--ink);}
+.btn-outline-dark:hover{border-color:var(--gold); color:var(--mauve);}
+.btn-solid-dark{background:var(--ink); color:#fff; border:1px solid var(--ink);}
+.btn-solid-dark:hover{background:var(--mauve); border-color:var(--mauve);}
+.card-actions button:disabled{opacity:.4; cursor:not-allowed;}
+.state-msg{text-align:center; padding:60px 20px; color:var(--ink-soft); font-size:.9rem;}
+.spinner{
+  width:26px; height:26px; border-radius:50%; border:3px solid rgba(201,162,75,.25);
+  border-top-color:var(--gold); margin:0 auto 14px; animation:spin 1s linear infinite;
+}
+@keyframes spin{to{transform:rotate(360deg);}}
+
+/* ---------- Categories ---------- */
+.cat-grid{display:grid; grid-template-columns:repeat(auto-fit,minmax(150px,1fr)); gap:18px;}
+.cat-card{
+  background:#fff; border:1px solid rgba(26,23,16,.08); border-radius:20px; padding:30px 16px; text-align:center;
+  transition:.35s ease; position:relative; overflow:hidden;
+}
+.cat-card::before{
+  content:''; position:absolute; inset:0; opacity:0; transition:opacity .35s ease;
+  background:radial-gradient(circle at 50% 0%, rgba(201,162,75,.14), transparent 65%);
+}
+.cat-card:hover{transform:translateY(-6px); border-color:rgba(201,162,75,.35); box-shadow:var(--shadow-lux);}
+.cat-card:hover::before{opacity:1;}
+.cat-icon{font-size:2.1rem; display:block; margin-bottom:12px; transition:transform .35s ease;}
+.cat-card:hover .cat-icon{transform:scale(1.18) rotate(-6deg);}
+.cat-card span{font-size:.85rem; font-weight:700; letter-spacing:.03em; position:relative;}
+
+/* ---------- Why us ---------- */
+.why-grid{display:grid; grid-template-columns:repeat(auto-fit,minmax(240px,1fr)); gap:22px;}
+.why-card{
+  background:linear-gradient(160deg,#fff, var(--pearl)); border:1px solid rgba(26,23,16,.07);
+  border-radius:20px; padding:28px; transition:.35s ease;
+}
+.why-card:hover{transform:translateY(-5px); box-shadow:0 20px 40px -22px rgba(26,23,16,.3); border-color:rgba(201,162,75,.3);}
+.why-icon{
+  width:48px; height:48px; border-radius:50%; background:rgba(201,162,75,.14); color:var(--mauve);
+  display:grid; place-items:center; font-size:1.3rem; margin-bottom:16px; transition:.3s ease;
+}
+.why-card:hover .why-icon{background:var(--mauve); color:#fff; transform:scale(1.08);}
+.why-card h3{font-family:var(--ff-display); font-size:1.08rem; margin:0 0 8px;}
+.why-card p{font-size:.85rem; color:var(--ink-soft); margin:0; line-height:1.6;}
+
+/* ---------- Dark sections (best-sellers / reviews) ---------- */
+.section-dark{background:var(--obsidian); color:var(--pearl);}
+.section-dark .section-head h2{color:var(--pearl);}
+.section-dark .section-head p{color:rgba(243,239,232,.6);}
+.marquee-wrap{overflow:hidden; width:100%;}
+.marquee-track{display:flex; gap:20px; width:max-content; animation:marquee 38s linear infinite;}
+.marquee-track:hover{animation-play-state:paused;}
+@keyframes marquee{from{transform:translateX(0);} to{transform:translateX(-50%);}}
+html[dir="rtl"] .marquee-track{animation-name:marqueeRtl;}
+@keyframes marqueeRtl{from{transform:translateX(0);} to{transform:translateX(50%);}}
+.mini-card{
+  width:210px; flex-shrink:0; background:rgba(255,255,255,.04); border:1px solid rgba(201,162,75,.18);
+  border-radius:18px; overflow:hidden; text-align:left; transition:.3s ease;
+}
+html[dir="rtl"] .mini-card{text-align:right;}
+.mini-card:hover{border-color:var(--gold); transform:translateY(-4px);}
+.mini-card img{aspect-ratio:1/1; object-fit:cover;}
+.mini-card-body{padding:12px 14px;}
+.mini-card-body p{margin:0; font-size:.85rem; font-weight:600; text-transform:capitalize;}
+.mini-card-price{color:var(--gold-light); font-size:.78rem; margin-top:4px;}
+
+.review-card{
+  width:320px; flex-shrink:0; background:rgba(255,255,255,.04); border:1px solid rgba(201,162,75,.16);
+  border-radius:20px; padding:26px; text-align:left;
+}
+html[dir="rtl"] .review-card{text-align:right;}
+.review-card p.quote{font-size:.88rem; line-height:1.7; color:rgba(243,239,232,.78); min-height:84px;}
+.review-who{display:flex; align-items:center; gap:12px; margin-top:16px;}
+.review-avatar{
+  width:38px; height:38px; border-radius:50%; background:linear-gradient(135deg,var(--gold),var(--mauve));
+  display:grid; place-items:center; font-weight:700; color:#fff; font-size:.85rem;
+}
+.review-name{font-size:.85rem; font-weight:700;}
+.review-stars{color:var(--gold); font-size:.72rem;}
+
+/* ---------- Newsletter ---------- */
+#newsletter{
+  background:linear-gradient(120deg, var(--obsidian) 0%, #241f2e 100%); color:var(--pearl); text-align:center;
+  position:relative; overflow:hidden;
+}
+#newsletter::before{
+  content:''; position:absolute; width:420px; height:420px; border-radius:50%;
+  background:radial-gradient(circle, rgba(125,224,211,.14), transparent 70%);
+  top:50%; left:50%; transform:translate(-50%,-50%);
+}
+.newsletter-inner{position:relative; z-index:1; max-width:520px; margin:0 auto;}
+.newsletter-form{display:flex; gap:10px; margin-top:26px; flex-wrap:wrap; justify-content:center;}
+.newsletter-form input{
+  flex:1; min-width:220px; border-radius:999px; border:1px solid rgba(243,239,232,.22); background:rgba(255,255,255,.06);
+  padding:13px 20px; color:#fff; font-size:.85rem;
+}
+.newsletter-form input::placeholder{color:rgba(243,239,232,.4);}
+.newsletter-form input:focus{outline:2px solid var(--gold); outline-offset:1px;}
+.newsletter-success{display:flex; align-items:center; justify-content:center; gap:8px; color:var(--teal); margin-top:22px; font-size:.9rem;}
+
+/* ---------- Contact ---------- */
+.contact-grid{display:grid; grid-template-columns:repeat(auto-fit,minmax(230px,1fr)); gap:18px;}
+.contact-card{
+  display:flex; align-items:center; gap:14px; background:#fff; border:1px solid rgba(26,23,16,.08);
+  border-radius:18px; padding:18px 20px; transition:.3s ease;
+}
+.contact-card:hover{transform:translateY(-4px); border-color:rgba(201,162,75,.35); box-shadow:0 16px 30px -20px rgba(26,23,16,.3);}
+.contact-icon{
+  width:44px; height:44px; border-radius:50%; background:rgba(201,162,75,.14); color:var(--mauve);
+  display:grid; place-items:center; flex-shrink:0;
+}
+.contact-label{font-size:.68rem; text-transform:uppercase; letter-spacing:.1em; color:var(--ink-soft);}
+.contact-value{font-size:.9rem; font-weight:700;}
+
+/* ---------- Footer ---------- */
+footer{background:var(--obsidian); color:rgba(243,239,232,.7); padding:64px 24px 28px;}
+.footer-grid{display:grid; grid-template-columns:2fr 1fr 1fr 1fr; gap:36px;}
+@media (max-width:820px){.footer-grid{grid-template-columns:1fr 1fr;}}
+.footer-brand p{font-size:.85rem; line-height:1.7; color:rgba(243,239,232,.5); margin:12px 0 18px;}
+.footer-social{display:flex; gap:10px;}
+.footer-social a{
+  width:36px; height:36px; border-radius:50%; border:1px solid rgba(243,239,232,.18);
+  display:grid; place-items:center; transition:.25s ease;
+}
+.footer-social a:hover{border-color:var(--gold); color:var(--gold);}
+footer h4{font-size:.78rem; letter-spacing:.1em; text-transform:uppercase; color:var(--pearl); margin:0 0 16px;}
+footer ul{list-style:none; padding:0; margin:0; display:flex; flex-direction:column; gap:10px;}
+footer ul a{font-size:.85rem; color:rgba(243,239,232,.55); transition:.2s ease;}
+footer ul a:hover{color:var(--gold-light);}
+.footer-bottom{
+  max-width:1240px; margin:48px auto 0; padding-top:24px; border-top:1px solid rgba(243,239,232,.1);
+  text-align:center; font-size:.76rem; color:rgba(243,239,232,.4);
+}
+
+/* ---------- Overlay / Drawer / Modal shared ---------- */
+.overlay{
+  position:fixed; inset:0; background:rgba(11,11,16,.55); backdrop-filter:blur(3px);
+  opacity:0; pointer-events:none; transition:opacity .3s ease; z-index:80;
+}
+.overlay.open{opacity:1; pointer-events:auto;}
+
+#cart-drawer{
+  position:fixed; top:0; bottom:0; inset-inline-end:0; width:min(400px,92vw); background:#fff; z-index:90;
+  transform:translateX(105%); transition:transform .4s cubic-bezier(.2,.8,.2,1); display:flex; flex-direction:column;
+  box-shadow:-20px 0 50px rgba(0,0,0,.15);
+}
+html[dir="rtl"] #cart-drawer{transform:translateX(-105%);}
+#cart-drawer.open{transform:translateX(0);}
+.drawer-head{display:flex; align-items:center; justify-content:space-between; padding:22px 22px 16px; border-bottom:1px solid rgba(26,23,16,.08);}
+.drawer-head h3{font-family:var(--ff-display); font-size:1.25rem; margin:0;}
+.drawer-close{background:none; border:none; font-size:1.3rem; color:var(--ink-soft); line-height:1;}
+.drawer-body{flex:1; overflow-y:auto; padding:18px 22px;}
+.cart-line{display:flex; gap:12px; padding:14px 0; border-bottom:1px solid rgba(26,23,16,.06);}
+.cart-line img{width:60px; height:74px; object-fit:cover; border-radius:10px; background:var(--pearl); flex-shrink:0;}
+.cart-line-info{flex:1; min-width:0;}
+.cart-line-info p.name{margin:0; font-weight:700; font-size:.88rem; text-transform:capitalize;}
+.cart-line-info p.price{margin:2px 0 8px; font-size:.78rem; color:var(--ink-soft);}
+.qty-stepper{display:flex; align-items:center; gap:8px;}
+.qty-stepper button{
+  width:24px; height:24px; border-radius:50%; border:1px solid rgba(26,23,16,.15); background:#fff; font-size:.8rem;
+  display:grid; place-items:center; color:var(--ink);
+}
+.qty-stepper button:hover{border-color:var(--gold); color:var(--mauve);}
+.cart-line-remove{margin-inline-start:auto; background:none; border:none; color:rgba(26,23,16,.3); font-size:1rem;}
+.cart-line-remove:hover{color:#c0455a;}
+.drawer-empty{display:flex; flex-direction:column; align-items:center; justify-content:center; height:100%; gap:10px; color:var(--ink-soft); text-align:center;}
+.drawer-empty .icon{font-size:2.2rem; opacity:.5;}
+.drawer-foot{padding:18px 22px 24px; border-top:1px solid rgba(26,23,16,.08);}
+.drawer-total{display:flex; justify-content:space-between; font-family:var(--ff-display); font-size:1.1rem; font-weight:700; margin-bottom:14px;}
+.btn-block{width:100%; justify-content:center;}
+
+/* ---------- Checkout modal ---------- */
+#checkout-modal{
+  position:fixed; inset:0; margin:auto; z-index:95; width:min(560px,92vw); max-height:88vh; overflow-y:auto;
+  background:#fff; border-radius:26px; padding:32px; opacity:0; pointer-events:none;
+  transform:translateY(20px) scale(.98); transition:.35s cubic-bezier(.2,.8,.2,1);
+}
+#checkout-modal.open{opacity:1; pointer-events:auto; transform:translateY(0) scale(1);}
+.modal-head{display:flex; align-items:flex-start; justify-content:space-between; margin-bottom:20px;}
+.modal-head h3{font-family:var(--ff-display); font-size:1.5rem; margin:0 0 4px;}
+.modal-head p{margin:0; font-size:.82rem; color:var(--ink-soft);}
+.modal-close{background:none; border:none; font-size:1.4rem; color:var(--ink-soft);}
+.order-summary{background:var(--pearl); border-radius:16px; padding:16px; margin-bottom:20px; display:flex; flex-direction:column; gap:10px; max-height:220px; overflow-y:auto;}
+.order-line{display:flex; align-items:center; gap:10px;}
+.order-line img{width:44px; height:54px; object-fit:cover; border-radius:8px; flex-shrink:0; background:#fff;}
+.order-line-info{flex:1; min-width:0;}
+.order-line-info p.name{margin:0; font-size:.82rem; font-weight:700; text-transform:capitalize;}
+.order-line-info p.price{margin:0; font-size:.74rem; color:var(--ink-soft);}
+.order-totals{border-top:1px dashed rgba(26,23,16,.2); padding-top:10px; font-size:.82rem; display:flex; flex-direction:column; gap:5px;}
+.order-totals .row{display:flex; justify-content:space-between; color:var(--ink-soft);}
+.order-totals .row.grand{color:var(--ink); font-weight:800; font-family:var(--ff-display); font-size:1rem;}
+.form-grid{display:grid; grid-template-columns:1fr 1fr; gap:12px;}
+@media (max-width:520px){.form-grid{grid-template-columns:1fr;}}
+.field{margin-bottom:12px;}
+.field label{display:block; font-size:.72rem; font-weight:700; letter-spacing:.03em; margin-bottom:6px; color:var(--ink-soft);}
+.field input, .field select, .field textarea{
+  width:100%; border:1px solid rgba(26,23,16,.16); border-radius:12px; padding:12px 14px; font-size:.88rem;
+  font-family:inherit; background:#fff; color:var(--ink); transition:.2s ease;
+}
+.field input:focus, .field select:focus, .field textarea:focus{outline:none; border-color:var(--gold); box-shadow:0 0 0 3px rgba(201,162,75,.15);}
+.field-error{color:#c0455a; font-size:.72rem; margin-top:12px; display:none;}
+.field-error.show{display:block;}
+.checkout-success{display:flex; flex-direction:column; align-items:center; text-align:center; gap:14px; padding:20px 0;}
+.checkout-success .check-icon{
+  width:64px; height:64px; border-radius:50%; background:rgba(125,224,211,.16); color:var(--teal);
+  display:grid; place-items:center; font-size:2rem;
+}
+
+/* ---------- Toast ---------- */
+#toast{
+  position:fixed; bottom:26px; inset-inline-start:50%; transform:translateX(-50%) translateY(20px);
+  background:var(--obsidian); color:var(--pearl); padding:13px 24px; border-radius:999px; font-size:.85rem;
+  opacity:0; pointer-events:none; transition:.35s ease; z-index:100; border:1px solid rgba(201,162,75,.3);
+  display:flex; align-items:center; gap:8px;
+}
+html[dir="rtl"] #toast{transform:translateX(50%) translateY(20px);}
+#toast.show{opacity:1; transform:translateX(-50%) translateY(0);}
+html[dir="rtl"] #toast.show{transform:translateX(50%) translateY(0);}
+
+/* ---------- Scroll top ---------- */
+#scroll-top{
+  position:fixed; bottom:26px; inset-inline-end:26px; width:46px; height:46px; border-radius:50%;
+  background:var(--gold); color:var(--obsidian); border:none; display:grid; place-items:center; font-size:1.1rem;
+  opacity:0; pointer-events:none; transform:translateY(10px); transition:.3s ease; z-index:70; box-shadow:0 10px 24px -8px rgba(201,162,75,.5);
+}
+#scroll-top.show{opacity:1; pointer-events:auto; transform:translateY(0);}
+
+/* ---------- Reveal on scroll ---------- */
+.reveal{opacity:0; transform:translateY(24px); transition:opacity .7s ease, transform .7s ease;}
+.reveal.in-view{opacity:1; transform:translateY(0);}
+</style>
+</head>
+<body>
+
+<header id="site-header">
+  <div class="header-row">
+    <button class="nav-toggle" id="nav-toggle" aria-label="Menu" aria-expanded="false">☰</button>
+
+    <a href="https://13000-iqwupcviz46koxhqkmka8-3844e1b6.preview.happyseeds.space/virella.html#home" class="brand" translate="no">
+      <img class="brand-logo" src="./Virella — Maroquinerie de 15_files/pic15.png" alt="Virella" onerror="this.style.display=&#39;none&#39;" style="display: none;">
+      <span class="brand-name">VIRELLA</span>
+    </a>
+
+    <nav>
+      <ul class="main-nav" id="main-nav">
+        <li><a href="https://13000-iqwupcviz46koxhqkmka8-3844e1b6.preview.happyseeds.space/virella.html#home" data-i18n="nav.home">Accueil</a></li>
+        <li><a href="https://13000-iqwupcviz46koxhqkmka8-3844e1b6.preview.happyseeds.space/virella.html#collection" data-i18n="nav.collection">Collection</a></li>
+        <li><a href="https://13000-iqwupcviz46koxhqkmka8-3844e1b6.preview.happyseeds.space/virella.html#best-sellers" data-i18n="nav.bestsellers">Meilleures ventes</a></li>
+        <li><a href="https://13000-iqwupcviz46koxhqkmka8-3844e1b6.preview.happyseeds.space/virella.html#new" data-i18n="nav.new">Nouveautés</a></li>
+        <li><a href="https://13000-iqwupcviz46koxhqkmka8-3844e1b6.preview.happyseeds.space/virella.html#about" data-i18n="nav.about">À propos</a></li>
+        <li><a href="https://13000-iqwupcviz46koxhqkmka8-3844e1b6.preview.happyseeds.space/virella.html#contact" data-i18n="nav.contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <div class="header-actions">
+      <div class="lang-toggle" role="group" aria-label="Language">
+        <button id="lang-fr" class="active" onclick="setLang(&#39;fr&#39;)">FR</button>
+        <button id="lang-ar" onclick="setLang(&#39;ar&#39;)">AR</button>
+      </div>
+      <button class="icon-btn" aria-label="Recherche" data-i18n-title="a11y.search"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"></circle><path d="m21 21-4.3-4.3"></path></svg></button>
+      <button class="icon-btn" id="wishlist-btn" aria-label="Favoris"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 0 0-7.8 7.8l1 1L12 21l7.8-7.8 1-1a5.5 5.5 0 0 0 0-7.6Z"></path></svg><span class="icon-badge" id="wishlist-count" style="display:none">0</span></button>
+      <button class="icon-btn" aria-label="Compte"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="4"></circle><path d="M4 21c1.5-4 5-6 8-6s6.5 2 8 6"></path></svg></button>
+      <button class="icon-btn" id="cart-btn" aria-label="Panier"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="9" cy="21" r="1"></circle><circle cx="19" cy="21" r="1"></circle><path d="M2.5 3h2l2.6 12.4a2 2 0 0 0 2 1.6h8.4a2 2 0 0 0 2-1.6L21 8H6"></path></svg><span class="icon-badge" id="cart-count" style="display:none">0</span></button>
+    </div>
+  </div>
+  <nav class="mobile-nav" id="mobile-nav">
+    <a href="https://13000-iqwupcviz46koxhqkmka8-3844e1b6.preview.happyseeds.space/virella.html#home" data-i18n="nav.home">Accueil</a>
+    <a href="https://13000-iqwupcviz46koxhqkmka8-3844e1b6.preview.happyseeds.space/virella.html#collection" data-i18n="nav.collection">Collection</a>
+    <a href="https://13000-iqwupcviz46koxhqkmka8-3844e1b6.preview.happyseeds.space/virella.html#best-sellers" data-i18n="nav.bestsellers">Meilleures ventes</a>
+    <a href="https://13000-iqwupcviz46koxhqkmka8-3844e1b6.preview.happyseeds.space/virella.html#new" data-i18n="nav.new">Nouveautés</a>
+    <a href="https://13000-iqwupcviz46koxhqkmka8-3844e1b6.preview.happyseeds.space/virella.html#about" data-i18n="nav.about">À propos</a>
+    <a href="https://13000-iqwupcviz46koxhqkmka8-3844e1b6.preview.happyseeds.space/virella.html#contact" data-i18n="nav.contact">Contact</a>
+  </nav>
+</header>
+
+<section id="hero">
+  <canvas id="hero-sky" aria-hidden="true" width="1835" height="1127" style="width: 1468px; height: 902px;"></canvas>
+  <div class="particles" id="hero-particles"><span class="particle" style="width: 5.72009px; height: 5.72009px; left: 32.7643%; top: 65.7212%; animation-duration: 8.58803s; animation-delay: 1.51645s;"></span><span class="particle" style="width: 8.87066px; height: 8.87066px; left: 28.6149%; top: 31.5958%; animation-duration: 7.67986s; animation-delay: 1.85887s;"></span><span class="particle" style="width: 7.04925px; height: 7.04925px; left: 17.5419%; top: 67.3439%; animation-duration: 8.70141s; animation-delay: 2.33181s;"></span><span class="particle" style="width: 9.76668px; height: 9.76668px; left: 41.7132%; top: 20.6306%; animation-duration: 8.74013s; animation-delay: 0.708796s;"></span><span class="particle" style="width: 6.77938px; height: 6.77938px; left: 23.1565%; top: 30.1019%; animation-duration: 8.93505s; animation-delay: 2.05313s;"></span><span class="particle" style="width: 7.34043px; height: 7.34043px; left: 6.6741%; top: 11.736%; animation-duration: 5.55732s; animation-delay: 1.32385s;"></span><span class="particle" style="width: 7.24156px; height: 7.24156px; left: 20.6853%; top: 50.6505%; animation-duration: 7.68206s; animation-delay: 1.86536s;"></span><span class="particle" style="width: 8.33762px; height: 8.33762px; left: 63.7849%; top: 25.0194%; animation-duration: 9.03297s; animation-delay: 3.42606s;"></span><span class="particle" style="width: 6.32055px; height: 6.32055px; left: 79.8017%; top: 11.0746%; animation-duration: 7.16889s; animation-delay: 0.711574s;"></span><span class="particle" style="width: 9.42446px; height: 9.42446px; left: 68.5942%; top: 56.4516%; animation-duration: 8.40314s; animation-delay: 3.70522s;"></span><span class="particle" style="width: 9.02288px; height: 9.02288px; left: 53.7098%; top: 69.7469%; animation-duration: 9.6514s; animation-delay: 2.7835s;"></span><span class="particle" style="width: 4.51288px; height: 4.51288px; left: 94.3985%; top: 73.041%; animation-duration: 5.77899s; animation-delay: 3.20104s;"></span><span class="particle" style="width: 8.641px; height: 8.641px; left: 85.8225%; top: 63.7421%; animation-duration: 9.83228s; animation-delay: 2.50039s;"></span><span class="particle" style="width: 8.99154px; height: 8.99154px; left: 66.2058%; top: 47.8808%; animation-duration: 6.43463s; animation-delay: 1.79917s;"></span></div>
+  <div class="glow-orb"></div>
+  <div class="moon"></div>
+  <div class="hero-inner">
+    <p class="hero-eyebrow">✦ <span data-i18n="hero.eyebrow">Nouvelle Collection</span></p>
+    <h1 class="hero-title" data-i18n-html="hero.title">Sacs à Main de Luxe, <em>Réinventés</em></h1>
+    <p class="hero-sub" data-i18n="hero.subtitle">Une élégance intemporelle, façonnée pour la femme d'aujourd'hui — entre héritage artisanal et esprit futuriste.</p>
+    <div class="hero-ctas">
+      <a href="https://13000-iqwupcviz46koxhqkmka8-3844e1b6.preview.happyseeds.space/virella.html#collection" class="btn btn-primary"><span data-i18n="hero.cta1">Acheter maintenant</span></a>
+      <a href="https://13000-iqwupcviz46koxhqkmka8-3844e1b6.preview.happyseeds.space/virella.html#collection" class="btn btn-ghost"><span data-i18n="hero.cta2">Explorer la collection</span></a>
+    </div>
+    <div class="hero-stats">
+      <div class="hero-stat"><b>500+</b><span data-i18n="hero.stat1">Modèles</span></div>
+      <div class="hero-stat"><b>12K+</b><span data-i18n="hero.stat2">Clientes conquises</span></div>
+      <div class="hero-stat"><b>4.9★</b><span data-i18n="hero.stat3">Service noté</span></div>
+    </div>
+  </div>
+</section>
+
+<section id="collection" class="section">
+  <div class="container">
+    <div class="section-head reveal in-view">
+      <p class="eyebrow" data-i18n="collection.eyebrow">Notre collection</p>
+      <h2 data-i18n="collection.title">Sacs vedettes</h2>
+      <p data-i18n="collection.subtitle">Chaque pièce est sélectionnée avec soin pour sublimer chaque silhouette.</p>
+      <div class="thread section-thread"></div>
+    </div>
+    <div class="filters" id="filters"><button class="filter-chip active" data-cat="__all__">Tous</button><button class="filter-chip " data-cat="12">12</button><button class="filter-chip " data-cat="14">14</button><button class="filter-chip " data-cat="6">6</button><button class="filter-chip " data-cat="88">88</button><button class="filter-chip " data-cat="1056">1056</button><button class="filter-chip " data-cat="mmm">mmm</button></div>
+    <div id="product-grid-state"></div>
+    <div class="product-grid" id="product-grid">
+  <div class="card in-view" data-id="1">
+    <div class="card-media">
+      <img src="./Virella — Maroquinerie de 15_files/pic1.jpeg" alt="blackss" loading="lazy" onerror="handleImgError(this,&#39;https://drive.google.com/file/d/1dMjMqzc6Z3oehdtEctHbHz-frqMr_a2C/view?usp=drive_link&#39;)">
+      
+      <button class="wishlist-btn " data-action="wishlist" data-id="1" aria-label="Wishlist">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 0 0-7.8 7.8l1 1L12 21l7.8-7.8 1-1a5.5 5.5 0 0 0 0-7.6Z"></path></svg>
+      </button>
+      <button class="card-quick" data-action="buynow" data-id="1">Aperçu rapide</button>
+    </div>
+    <div class="card-body">
+      <p class="card-cat">12</p>
+      <h3 class="card-name" translate="no">blackss</h3>
+      <p class="card-desc">rd ,tall , vosfh</p>
+      <div class="card-stars">★★★★★</div>
+      <div class="card-price-row">
+        <span class="card-price" translate="no">1,000 DA</span>
+      </div>
+      <div class="card-actions">
+        <button class="btn-outline-dark" data-action="addcart" data-id="1">Ajouter au panier</button>
+        <button class="btn-solid-dark" data-action="buynow" data-id="1">Acheter maintenant</button>
+      </div>
+    </div>
+  </div>
+  <div class="card in-view" data-id="2">
+    <div class="card-media">
+      <img src="./Virella — Maroquinerie de 15_files/pic2.jpeg" alt="diamond" loading="lazy" onerror="handleImgError(this,&#39;https://drive.google.com/file/d/1WLIHYXnRkqeXHlAGzkBAQNXdO1WuE8Po/view?usp=drive_link&#39;)">
+      
+      <button class="wishlist-btn " data-action="wishlist" data-id="2" aria-label="Wishlist">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 0 0-7.8 7.8l1 1L12 21l7.8-7.8 1-1a5.5 5.5 0 0 0 0-7.6Z"></path></svg>
+      </button>
+      <button class="card-quick" data-action="buynow" data-id="2">Aperçu rapide</button>
+    </div>
+    <div class="card-body">
+      <p class="card-cat">14</p>
+      <h3 class="card-name" translate="no">diamond</h3>
+      <p class="card-desc">55555555</p>
+      <div class="card-stars">★★★★★</div>
+      <div class="card-price-row">
+        <span class="card-price" translate="no">2,500 DA</span>
+      </div>
+      <div class="card-actions">
+        <button class="btn-outline-dark" data-action="addcart" data-id="2">Ajouter au panier</button>
+        <button class="btn-solid-dark" data-action="buynow" data-id="2">Acheter maintenant</button>
+      </div>
+    </div>
+  </div>
+  <div class="card in-view" data-id="3">
+    <div class="card-media">
+      <img src="./Virella — Maroquinerie de 15_files/pic3.jpeg" alt="paris" loading="lazy" onerror="handleImgError(this,&#39;https://drive.google.com/file/d/1V9LTyr1CDqTRc2yHH1Cck9lq7wJKD7hV/view?usp=drive_link&#39;)">
+      
+      <button class="wishlist-btn " data-action="wishlist" data-id="3" aria-label="Wishlist">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 0 0-7.8 7.8l1 1L12 21l7.8-7.8 1-1a5.5 5.5 0 0 0 0-7.6Z"></path></svg>
+      </button>
+      <button class="card-quick" data-action="buynow" data-id="3">Aperçu rapide</button>
+    </div>
+    <div class="card-body">
+      <p class="card-cat">6</p>
+      <h3 class="card-name" translate="no">paris</h3>
+      <p class="card-desc">smart and optional</p>
+      <div class="card-stars">★★★★★</div>
+      <div class="card-price-row">
+        <span class="card-price" translate="no">1,500 DA</span>
+      </div>
+      <div class="card-actions">
+        <button class="btn-outline-dark" data-action="addcart" data-id="3">Ajouter au panier</button>
+        <button class="btn-solid-dark" data-action="buynow" data-id="3">Acheter maintenant</button>
+      </div>
+    </div>
+  </div>
+  <div class="card in-view" data-id="4">
+    <div class="card-media">
+      <img src="./Virella — Maroquinerie de 15_files/pic2.jpeg" alt="italian" loading="lazy" onerror="handleImgError(this,&#39;https://drive.google.com/file/d/1WLIHYXnRkqeXHlAGzkBAQNXdO1WuE8Po/view?usp=drive_link&#39;)">
+      
+      <button class="wishlist-btn " data-action="wishlist" data-id="4" aria-label="Wishlist">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 0 0-7.8 7.8l1 1L12 21l7.8-7.8 1-1a5.5 5.5 0 0 0 0-7.6Z"></path></svg>
+      </button>
+      <button class="card-quick" data-action="buynow" data-id="4">Aperçu rapide</button>
+    </div>
+    <div class="card-body">
+      <p class="card-cat">88</p>
+      <h3 class="card-name" translate="no">italian</h3>
+      <p class="card-desc">kind</p>
+      <div class="card-stars">★★★★★</div>
+      <div class="card-price-row">
+        <span class="card-price" translate="no">3,400 DA</span>
+      </div>
+      <div class="card-actions">
+        <button class="btn-outline-dark" data-action="addcart" data-id="4">Ajouter au panier</button>
+        <button class="btn-solid-dark" data-action="buynow" data-id="4">Acheter maintenant</button>
+      </div>
+    </div>
+  </div>
+  <div class="card in-view" data-id="5">
+    <div class="card-media">
+      <img src="./Virella — Maroquinerie de 15_files/pic1.jpeg" alt="spanich" loading="lazy" onerror="handleImgError(this,&#39;https://drive.google.com/file/d/1dMjMqzc6Z3oehdtEctHbHz-frqMr_a2C/view?usp=drive_link&#39;)">
+      
+      <button class="wishlist-btn " data-action="wishlist" data-id="5" aria-label="Wishlist">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 0 0-7.8 7.8l1 1L12 21l7.8-7.8 1-1a5.5 5.5 0 0 0 0-7.6Z"></path></svg>
+      </button>
+      <button class="card-quick" data-action="buynow" data-id="5">Aperçu rapide</button>
+    </div>
+    <div class="card-body">
+      <p class="card-cat">1056</p>
+      <h3 class="card-name" translate="no">spanich</h3>
+      <p class="card-desc">djdjdjd</p>
+      <div class="card-stars">★★★★★</div>
+      <div class="card-price-row">
+        <span class="card-price" translate="no">1,200 DA</span>
+      </div>
+      <div class="card-actions">
+        <button class="btn-outline-dark" data-action="addcart" data-id="5">Ajouter au panier</button>
+        <button class="btn-solid-dark" data-action="buynow" data-id="5">Acheter maintenant</button>
+      </div>
+    </div>
+  </div>
+  <div class="card in-view" data-id="6">
+    <div class="card-media">
+      <img src="./Virella — Maroquinerie de 15_files/pic5.jpeg" alt="pankake" loading="lazy" onerror="handleImgError(this,&#39;https://drive.google.com/file/d/1z6urJ4GvDy7gIRkDAgDP_X5NTmXl1XFC/view?usp=drive_link&#39;)">
+      
+      <button class="wishlist-btn " data-action="wishlist" data-id="6" aria-label="Wishlist">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 0 0-7.8 7.8l1 1L12 21l7.8-7.8 1-1a5.5 5.5 0 0 0 0-7.6Z"></path></svg>
+      </button>
+      <button class="card-quick" data-action="buynow" data-id="6">Aperçu rapide</button>
+    </div>
+    <div class="card-body">
+      <p class="card-cat">mmm</p>
+      <h3 class="card-name" translate="no">pankake</h3>
+      
+      <div class="card-stars">★★★★★</div>
+      <div class="card-price-row">
+        <span class="card-price" translate="no">9,000 DA</span>
+      </div>
+      <div class="card-actions">
+        <button class="btn-outline-dark" data-action="addcart" data-id="6">Ajouter au panier</button>
+        <button class="btn-solid-dark" data-action="buynow" data-id="6">Acheter maintenant</button>
+      </div>
+    </div>
+  </div></div>
+  </div>
+</section>
+
+<section class="section" style="background:var(--pearl);">
+  <div class="container">
+    <div class="section-head reveal in-view">
+      <p class="eyebrow" data-i18n="categories.eyebrow">Style par style</p>
+      <h2 data-i18n="categories.title">Catégories</h2>
+      <div class="thread section-thread"></div>
+    </div>
+    <div class="cat-grid" id="cat-grid">
+    <a href="https://13000-iqwupcviz46koxhqkmka8-3844e1b6.preview.happyseeds.space/virella.html#collection" class="cat-card reveal in-view">
+      <span class="cat-icon">👜</span>
+      <span>Classique</span>
+    </a>
+    <a href="https://13000-iqwupcviz46koxhqkmka8-3844e1b6.preview.happyseeds.space/virella.html#collection" class="cat-card reveal in-view">
+      <span class="cat-icon">💎</span>
+      <span>Luxe</span>
+    </a>
+    <a href="https://13000-iqwupcviz46koxhqkmka8-3844e1b6.preview.happyseeds.space/virella.html#collection" class="cat-card reveal in-view">
+      <span class="cat-icon">🌸</span>
+      <span>Décontracté</span>
+    </a>
+    <a href="https://13000-iqwupcviz46koxhqkmka8-3844e1b6.preview.happyseeds.space/virella.html#collection" class="cat-card reveal in-view">
+      <span class="cat-icon">✨</span>
+      <span>Soirée</span>
+    </a>
+    <a href="https://13000-iqwupcviz46koxhqkmka8-3844e1b6.preview.happyseeds.space/virella.html#collection" class="cat-card reveal in-view">
+      <span class="cat-icon">💼</span>
+      <span>Bureau</span>
+    </a>
+    <a href="https://13000-iqwupcviz46koxhqkmka8-3844e1b6.preview.happyseeds.space/virella.html#collection" class="cat-card reveal in-view">
+      <span class="cat-icon">🧳</span>
+      <span>Voyage</span>
+    </a></div>
+  </div>
+</section>
+
+<section id="about" class="section">
+  <div class="container">
+    <div class="section-head reveal in-view">
+      <p class="eyebrow" data-i18n="why.eyebrow">Notre promesse</p>
+      <h2 data-i18n="why.title">Pourquoi nous choisir</h2>
+      <div class="thread section-thread"></div>
+    </div>
+    <div class="why-grid" id="why-grid">
+    <div class="why-card reveal in-view">
+      <div class="why-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 3 6 6 6-6M6 3l6 18 6-18M6 3H2l4 9-4 9h4"></path></svg></div>
+      <h3>Qualité premium</h3>
+      <p>Fabriqué avec les meilleurs matériaux, conçu pour durer.</p>
+    </div>
+    <div class="why-card reveal in-view">
+      <div class="why-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="1" y="7" width="15" height="10" rx="1"></rect><path d="M16 10h4l3 3v4h-7"></path><circle cx="6" cy="19" r="2"></circle><circle cx="18" cy="19" r="2"></circle></svg></div>
+      <h3>Livraison rapide</h3>
+      <p>Livraison partout dans le pays, directement chez vous.</p>
+    </div>
+    <div class="why-card reveal in-view">
+      <div class="why-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="16" rx="2"></rect><path d="M3 10h18M7 15h4"></path></svg></div>
+      <h3>Paiement sécurisé</h3>
+      <p>Paiement à la livraison — payez seulement à réception.</p>
+    </div>
+    <div class="why-card reveal in-view">
+      <div class="why-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12a9 9 0 1 0 3-6.7"></path><path d="M3 4v5h5"></path></svg></div>
+      <h3>Retours faciles</h3>
+      <p>Pas convaincue ? Retour possible sous 7 jours.</p>
+    </div>
+    <div class="why-card reveal in-view">
+      <div class="why-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 0 0-7.8 7.8l1 1L12 21l7.8-7.8 1-1a5.5 5.5 0 0 0 0-7.6Z"></path></svg></div>
+      <h3>Satisfaction client</h3>
+      <p>Des milliers de clientes conquises à travers le pays.</p>
+    </div>
+    <div class="why-card reveal in-view">
+      <div class="why-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="6"></circle><path d="M9 13.5 6 22l6-3 6 3-3-8.5"></path></svg></div>
+      <h3>Produits authentiques</h3>
+      <p>Chaque pièce vérifiée pour sa qualité et son savoir-faire.</p>
+    </div></div>
+  </div>
+</section>
+
+<section id="best-sellers" class="section section-dark">
+  <div class="container">
+    <div class="section-head reveal in-view">
+      <p class="eyebrow" data-i18n="bestsellers.eyebrow">Coup de cœur</p>
+      <h2 data-i18n="bestsellers.title">Meilleures ventes</h2>
+      <div class="thread section-thread"></div>
+    </div>
+  </div>
+  <div class="marquee-wrap"><div class="marquee-track" id="best-sellers-track">
+    <button class="mini-card" data-action="buynow" data-id="1">
+      <img src="./Virella — Maroquinerie de 15_files/pic1.jpeg" alt="blackss" loading="lazy" onerror="handleImgError(this,&#39;https://drive.google.com/file/d/1dMjMqzc6Z3oehdtEctHbHz-frqMr_a2C/view?usp=drive_link&#39;)">
+      <div class="mini-card-body">
+        <p translate="no">blackss</p>
+        <p class="mini-card-price" translate="no">1,000 DA</p>
+      </div>
+    </button>
+    <button class="mini-card" data-action="buynow" data-id="2">
+      <img src="./Virella — Maroquinerie de 15_files/pic2.jpeg" alt="diamond" loading="lazy" onerror="handleImgError(this,&#39;https://drive.google.com/file/d/1WLIHYXnRkqeXHlAGzkBAQNXdO1WuE8Po/view?usp=drive_link&#39;)">
+      <div class="mini-card-body">
+        <p translate="no">diamond</p>
+        <p class="mini-card-price" translate="no">2,500 DA</p>
+      </div>
+    </button>
+    <button class="mini-card" data-action="buynow" data-id="3">
+      <img src="./Virella — Maroquinerie de 15_files/pic3.jpeg" alt="paris" loading="lazy" onerror="handleImgError(this,&#39;https://drive.google.com/file/d/1V9LTyr1CDqTRc2yHH1Cck9lq7wJKD7hV/view?usp=drive_link&#39;)">
+      <div class="mini-card-body">
+        <p translate="no">paris</p>
+        <p class="mini-card-price" translate="no">1,500 DA</p>
+      </div>
+    </button>
+    <button class="mini-card" data-action="buynow" data-id="4">
+      <img src="./Virella — Maroquinerie de 15_files/pic2.jpeg" alt="italian" loading="lazy" onerror="handleImgError(this,&#39;https://drive.google.com/file/d/1WLIHYXnRkqeXHlAGzkBAQNXdO1WuE8Po/view?usp=drive_link&#39;)">
+      <div class="mini-card-body">
+        <p translate="no">italian</p>
+        <p class="mini-card-price" translate="no">3,400 DA</p>
+      </div>
+    </button>
+    <button class="mini-card" data-action="buynow" data-id="5">
+      <img src="./Virella — Maroquinerie de 15_files/pic1.jpeg" alt="spanich" loading="lazy" onerror="handleImgError(this,&#39;https://drive.google.com/file/d/1dMjMqzc6Z3oehdtEctHbHz-frqMr_a2C/view?usp=drive_link&#39;)">
+      <div class="mini-card-body">
+        <p translate="no">spanich</p>
+        <p class="mini-card-price" translate="no">1,200 DA</p>
+      </div>
+    </button>
+    <button class="mini-card" data-action="buynow" data-id="6">
+      <img src="./Virella — Maroquinerie de 15_files/pic5.jpeg" alt="pankake" loading="lazy" onerror="handleImgError(this,&#39;https://drive.google.com/file/d/1z6urJ4GvDy7gIRkDAgDP_X5NTmXl1XFC/view?usp=drive_link&#39;)">
+      <div class="mini-card-body">
+        <p translate="no">pankake</p>
+        <p class="mini-card-price" translate="no">9,000 DA</p>
+      </div>
+    </button>
+    <button class="mini-card" data-action="buynow" data-id="1">
+      <img src="./Virella — Maroquinerie de 15_files/pic1.jpeg" alt="blackss" loading="lazy" onerror="handleImgError(this,&#39;https://drive.google.com/file/d/1dMjMqzc6Z3oehdtEctHbHz-frqMr_a2C/view?usp=drive_link&#39;)">
+      <div class="mini-card-body">
+        <p translate="no">blackss</p>
+        <p class="mini-card-price" translate="no">1,000 DA</p>
+      </div>
+    </button>
+    <button class="mini-card" data-action="buynow" data-id="2">
+      <img src="./Virella — Maroquinerie de 15_files/pic2.jpeg" alt="diamond" loading="lazy" onerror="handleImgError(this,&#39;https://drive.google.com/file/d/1WLIHYXnRkqeXHlAGzkBAQNXdO1WuE8Po/view?usp=drive_link&#39;)">
+      <div class="mini-card-body">
+        <p translate="no">diamond</p>
+        <p class="mini-card-price" translate="no">2,500 DA</p>
+      </div>
+    </button>
+    <button class="mini-card" data-action="buynow" data-id="3">
+      <img src="./Virella — Maroquinerie de 15_files/pic3.jpeg" alt="paris" loading="lazy" onerror="handleImgError(this,&#39;https://drive.google.com/file/d/1V9LTyr1CDqTRc2yHH1Cck9lq7wJKD7hV/view?usp=drive_link&#39;)">
+      <div class="mini-card-body">
+        <p translate="no">paris</p>
+        <p class="mini-card-price" translate="no">1,500 DA</p>
+      </div>
+    </button>
+    <button class="mini-card" data-action="buynow" data-id="4">
+      <img src="./Virella — Maroquinerie de 15_files/pic2.jpeg" alt="italian" loading="lazy" onerror="handleImgError(this,&#39;https://drive.google.com/file/d/1WLIHYXnRkqeXHlAGzkBAQNXdO1WuE8Po/view?usp=drive_link&#39;)">
+      <div class="mini-card-body">
+        <p translate="no">italian</p>
+        <p class="mini-card-price" translate="no">3,400 DA</p>
+      </div>
+    </button>
+    <button class="mini-card" data-action="buynow" data-id="5">
+      <img src="./Virella — Maroquinerie de 15_files/pic1.jpeg" alt="spanich" loading="lazy" onerror="handleImgError(this,&#39;https://drive.google.com/file/d/1dMjMqzc6Z3oehdtEctHbHz-frqMr_a2C/view?usp=drive_link&#39;)">
+      <div class="mini-card-body">
+        <p translate="no">spanich</p>
+        <p class="mini-card-price" translate="no">1,200 DA</p>
+      </div>
+    </button>
+    <button class="mini-card" data-action="buynow" data-id="6">
+      <img src="./Virella — Maroquinerie de 15_files/pic5.jpeg" alt="pankake" loading="lazy" onerror="handleImgError(this,&#39;https://drive.google.com/file/d/1z6urJ4GvDy7gIRkDAgDP_X5NTmXl1XFC/view?usp=drive_link&#39;)">
+      <div class="mini-card-body">
+        <p translate="no">pankake</p>
+        <p class="mini-card-price" translate="no">9,000 DA</p>
+      </div>
+    </button></div></div>
+</section>
+
+<section class="section section-dark" style="padding-top:70px;">
+  <div class="container">
+    <div class="section-head reveal in-view">
+      <p class="eyebrow" data-i18n="reviews.eyebrow">Témoignages</p>
+      <h2 data-i18n="reviews.title">Avis de nos clientes</h2>
+      <div class="thread section-thread"></div>
+    </div>
+  </div>
+  <div class="marquee-wrap"><div class="marquee-track" id="reviews-track" style="animation-duration:44s">
+    <div class="review-card">
+      <p class="quote">"La qualité a dépassé mes attentes. On dirait un vrai sac de créateur !"</p>
+      <div class="review-who">
+        <div class="review-avatar">A.</div>
+        <div>
+          <p class="review-name">Amina K.</p>
+          <p class="review-stars">★★★★★</p>
+        </div>
+      </div>
+    </div>
+    <div class="review-card">
+      <p class="quote">"Livraison rapide et le cuir est magnifique. Je recommande déjà ma deuxième commande."</p>
+      <div class="review-who">
+        <div class="review-avatar">S.</div>
+        <div>
+          <p class="review-name">Sarah B.</p>
+          <p class="review-stars">★★★★★</p>
+        </div>
+      </div>
+    </div>
+    <div class="review-card">
+      <p class="quote">"Le service client a été formidable, et le sac est encore plus beau en vrai."</p>
+      <div class="review-who">
+        <div class="review-avatar">Y.</div>
+        <div>
+          <p class="review-name">Yasmine R.</p>
+          <p class="review-stars">★★★★★</p>
+        </div>
+      </div>
+    </div>
+    <div class="review-card">
+      <p class="quote">"Élégant, pratique, et un prix très juste pour cette qualité."</p>
+      <div class="review-who">
+        <div class="review-avatar">L.</div>
+        <div>
+          <p class="review-name">Lina M.</p>
+          <p class="review-stars">★★★★★</p>
+        </div>
+      </div>
+    </div>
+    <div class="review-card">
+      <p class="quote">"La qualité a dépassé mes attentes. On dirait un vrai sac de créateur !"</p>
+      <div class="review-who">
+        <div class="review-avatar">A.</div>
+        <div>
+          <p class="review-name">Amina K.</p>
+          <p class="review-stars">★★★★★</p>
+        </div>
+      </div>
+    </div>
+    <div class="review-card">
+      <p class="quote">"Livraison rapide et le cuir est magnifique. Je recommande déjà ma deuxième commande."</p>
+      <div class="review-who">
+        <div class="review-avatar">S.</div>
+        <div>
+          <p class="review-name">Sarah B.</p>
+          <p class="review-stars">★★★★★</p>
+        </div>
+      </div>
+    </div>
+    <div class="review-card">
+      <p class="quote">"Le service client a été formidable, et le sac est encore plus beau en vrai."</p>
+      <div class="review-who">
+        <div class="review-avatar">Y.</div>
+        <div>
+          <p class="review-name">Yasmine R.</p>
+          <p class="review-stars">★★★★★</p>
+        </div>
+      </div>
+    </div>
+    <div class="review-card">
+      <p class="quote">"Élégant, pratique, et un prix très juste pour cette qualité."</p>
+      <div class="review-who">
+        <div class="review-avatar">L.</div>
+        <div>
+          <p class="review-name">Lina M.</p>
+          <p class="review-stars">★★★★★</p>
+        </div>
+      </div>
+    </div></div></div>
+</section>
+
+<section id="newsletter" class="section">
+  <div class="newsletter-inner">
+    <h2 class="heading-xl" style="font-size:clamp(1.8rem,3vw,2.4rem)"><span data-i18n="newsletter.title">Rejoignez le</span> <em style="font-style:italic; color:var(--gold-light)" data-i18n="newsletter.titleAccent">Cercle Virella</em></h2>
+    <p style="color:rgba(243,239,232,.65); margin-top:10px;" data-i18n="newsletter.subtitle">Soyez informée en avant-première des nouveautés et ventes privées.</p>
+    <form class="newsletter-form" id="newsletter-form">
+      <input type="email" required="" placeholder="votre@email.com" id="newsletter-email" data-i18n-placeholder="newsletter.placeholder">
+      <button type="submit" class="btn btn-primary"><span data-i18n="newsletter.submit">S'abonner</span></button>
+    </form>
+    <div class="newsletter-success" id="newsletter-success" style="display:none;">✓ <span data-i18n="newsletter.success">Bienvenue dans le cercle !</span></div>
+  </div>
+</section>
+
+<section id="contact" class="section" style="background:var(--pearl);">
+  <div class="container">
+    <div class="section-head reveal in-view">
+      <p class="eyebrow" data-i18n="contact.eyebrow">Restons en contact</p>
+      <h2 data-i18n="contact.title">Contactez-nous</h2>
+      <div class="thread section-thread"></div>
+    </div>
+    <div class="contact-grid" id="contact-grid">
+    <div class="contact-card reveal in-view">
+      <div class="contact-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3.1-8.7A2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.3 1.8.6 2.7a2 2 0 0 1-.5 2.1L8 9.6a16 16 0 0 0 6 6l1.1-1.1a2 2 0 0 1 2.1-.5c.9.3 1.8.5 2.7.6a2 2 0 0 1 1.7 2Z"></path></svg></div>
+      <div><p class="contact-label">Téléphone</p><p class="contact-value" translate="no">+213 555 123 456</p></div>
+    </div>
+    <div class="contact-card reveal in-view">
+      <div class="contact-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"></rect><path d="m2 7 10 6 10-6"></path></svg></div>
+      <div><p class="contact-label">E-mail</p><p class="contact-value" translate="no">hello@virella.store</p></div>
+    </div>
+    <div class="contact-card reveal in-view">
+      <div class="contact-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"></path><circle cx="12" cy="10" r="3"></circle></svg></div>
+      <div><p class="contact-label">Localisation</p><p class="contact-value" translate="no">Alger, Algérie</p></div>
+    </div>
+    <div class="contact-card reveal in-view">
+      <div class="contact-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"></rect><circle cx="12" cy="12" r="4"></circle><circle cx="17.5" cy="6.5" r="1"></circle></svg></div>
+      <div><p class="contact-label">Instagram</p><p class="contact-value" translate="no">@virella.store</p></div>
+    </div>
+    <div class="contact-card reveal in-view">
+      <div class="contact-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg></div>
+      <div><p class="contact-label">Facebook</p><p class="contact-value" translate="no">Virella</p></div>
+    </div>
+    <div class="contact-card reveal in-view">
+      <div class="contact-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg></div>
+      <div><p class="contact-label">WhatsApp</p><p class="contact-value" translate="no">+213 555 123 456</p></div>
+    </div></div>
+  </div>
+</section>
+
+<footer>
+  <div class="container footer-grid">
+    <div class="footer-brand">
+      <div class="brand" translate="no">
+        <img class="brand-logo" src="./Virella — Maroquinerie de 15_files/pic15.png" alt="Virella" style="width: 34px; height: 34px; display: none;" onerror="this.style.display=&#39;none&#39;">
+        <span class="brand-name" style="font-size:1rem">VIRELLA</span>
+      </div>
+      <p data-i18n="footer.tagline">Des sacs intemporels façonnés pour la femme moderne.</p>
+      <div class="footer-social">
+        <a href="https://13000-iqwupcviz46koxhqkmka8-3844e1b6.preview.happyseeds.space/virella.html#contact" aria-label="Instagram"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"></rect><circle cx="12" cy="12" r="4"></circle><circle cx="17.5" cy="6.5" r="1"></circle></svg></a>
+        <a href="https://13000-iqwupcviz46koxhqkmka8-3844e1b6.preview.happyseeds.space/virella.html#contact" aria-label="Facebook"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg></a>
+        <a href="https://13000-iqwupcviz46koxhqkmka8-3844e1b6.preview.happyseeds.space/virella.html#contact" aria-label="WhatsApp"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg></a>
+      </div>
+    </div>
+    <div>
+      <h4 data-i18n="footer.linksTitle">Liens rapides</h4>
+      <ul>
+        <li><a href="https://13000-iqwupcviz46koxhqkmka8-3844e1b6.preview.happyseeds.space/virella.html#home" data-i18n="nav.home">Accueil</a></li>
+        <li><a href="https://13000-iqwupcviz46koxhqkmka8-3844e1b6.preview.happyseeds.space/virella.html#collection" data-i18n="nav.collection">Collection</a></li>
+        <li><a href="https://13000-iqwupcviz46koxhqkmka8-3844e1b6.preview.happyseeds.space/virella.html#best-sellers" data-i18n="nav.bestsellers">Meilleures ventes</a></li>
+        <li><a href="https://13000-iqwupcviz46koxhqkmka8-3844e1b6.preview.happyseeds.space/virella.html#about" data-i18n="nav.about">À propos</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4 data-i18n="footer.serviceTitle">Service client</h4>
+      <ul>
+        <li><a href="https://13000-iqwupcviz46koxhqkmka8-3844e1b6.preview.happyseeds.space/virella.html#contact" data-i18n="footer.contactUs">Nous contacter</a></li>
+        <li><a href="https://13000-iqwupcviz46koxhqkmka8-3844e1b6.preview.happyseeds.space/virella.html#contact" data-i18n="footer.shipping">Livraison</a></li>
+        <li><a href="https://13000-iqwupcviz46koxhqkmka8-3844e1b6.preview.happyseeds.space/virella.html#contact" data-i18n="footer.returns">Retours</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4 data-i18n="footer.policiesTitle">Politiques</h4>
+      <ul>
+        <li><a href="https://13000-iqwupcviz46koxhqkmka8-3844e1b6.preview.happyseeds.space/virella.html#contact" data-i18n="footer.privacy">Confidentialité</a></li>
+        <li><a href="https://13000-iqwupcviz46koxhqkmka8-3844e1b6.preview.happyseeds.space/virella.html#contact" data-i18n="footer.terms">Conditions</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span id="footer-year">2026</span> · <span data-i18n="footer.rights">Virella. Tous droits réservés.</span>
+  </div>
+</footer>
+
+<div class="overlay" id="overlay"></div>
+
+<aside id="cart-drawer" aria-label="Panier">
+  <div class="drawer-head">
+    <h3 data-i18n="cart.title">Votre panier</h3>
+    <button class="drawer-close" id="cart-close" aria-label="Fermer">✕</button>
+  </div>
+  <div class="drawer-body" id="cart-body"><div class="drawer-empty"><span class="icon">🛍️</span><p>Votre panier est vide.</p></div></div>
+  <div class="drawer-foot" id="cart-foot" style="display:none">
+    <div class="drawer-total"><span data-i18n="cart.subtotal">Sous-total</span><span id="cart-total">0 DA</span></div>
+    <button class="btn btn-primary btn-block" id="checkout-btn"><span data-i18n="cart.checkout">Passer la commande</span></button>
+  </div>
+</aside>
+
+<div id="checkout-modal" role="dialog" aria-modal="true" aria-label="Commande"></div>
+
+<div id="toast"></div>
+<button id="scroll-top" aria-label="Haut de page" class="">↑</button>
+
+<script>
+/* ============================================================
+   VIRELLA — Configuration
+   ============================================================ */
+const PRODUCTS_CSV_URL = "https://docs.google.com/spreadsheets/d/e/2PACX-1vROQLqkpbbMTb0wb14S8UB_sX5MeWnlWi5WhlO6NfZc07kK772Lf4Yw3VxKI9li0o-DAkEeoAE0NV_l/pub?output=csv";
+const ORDER_ENDPOINT = "https://script.google.com/macros/s/AKfycbzrA61IYslDkA_AdbY8jIirNtrfKEU9lbt-kSfntqgTLzj6uBIL7ipTkp2FppcDentp/exec";
+const SHIPPING_COST = 600;
+const CURRENCY = "DA";
+
+const WILAYAS = [
+  "01 - Adrar","02 - Chlef","03 - Laghouat","04 - Oum El Bouaghi","05 - Batna",
+  "06 - Béjaïa","07 - Biskra","08 - Béchar","09 - Blida","10 - Bouira",
+  "11 - Tamanrasset","12 - Tébessa","13 - Tlemcen","14 - Tiaret","15 - Tizi Ouzou",
+  "16 - Alger","17 - Djelfa","18 - Jijel","19 - Sétif","20 - Saïda",
+  "21 - Skikda","22 - Sidi Bel Abbès","23 - Annaba","24 - Guelma","25 - Constantine",
+  "26 - Médéa","27 - Mostaganem","28 - M'Sila","29 - Mascara","30 - Ouargla",
+  "31 - Oran","32 - El Bayadh","33 - Illizi","34 - Bordj Bou Arreridj","35 - Boumerdès",
+  "36 - El Tarf","37 - Tindouf","38 - Tissemsilt","39 - El Oued","40 - Khenchela",
+  "41 - Souk Ahras","42 - Tipaza","43 - Mila","44 - Aïn Defla","45 - Naâma",
+  "46 - Aïn Témouchent","47 - Ghardaïa","48 - Relizane","49 - Timimoun",
+  "50 - Bordj Badji Mokhtar","51 - Ouled Djellal","52 - Béni Abbès","53 - In Salah",
+  "54 - In Guezzam","55 - Touggourt","56 - Djanet","57 - El M'Ghair","58 - El Meniaa",
+];
+
+/* ============================================================
+   i18n — French (default) / Arabic
+   ============================================================ */
+const I18N = {
+  fr: {
+    "nav.home":"Accueil","nav.collection":"Collection","nav.bestsellers":"Meilleures ventes",
+    "nav.new":"Nouveautés","nav.about":"À propos","nav.contact":"Contact",
+    "a11y.search":"Recherche",
+    "hero.eyebrow":"Nouvelle Collection",
+    "hero.title":"Sacs à Main de Luxe, <em>Réinventés</em>",
+    "hero.subtitle":"Une élégance intemporelle, façonnée pour la femme d'aujourd'hui — entre héritage artisanal et esprit futuriste.",
+    "hero.cta1":"Acheter maintenant","hero.cta2":"Explorer la collection",
+    "hero.stat1":"Modèles","hero.stat2":"Clientes conquises","hero.stat3":"Service noté",
+    "collection.eyebrow":"Notre collection","collection.title":"Sacs vedettes",
+    "collection.subtitle":"Chaque pièce est sélectionnée avec soin pour sublimer chaque silhouette.",
+    "collection.all":"Tous",
+    "collection.loading":"Chargement de notre collection…",
+    "collection.error":"Impossible de charger la collection. Veuillez actualiser la page.",
+    "collection.empty":"Aucun produit dans cette catégorie pour le moment.",
+    "product.quickview":"Aperçu rapide","product.addToCart":"Ajouter au panier","product.buyNow":"Acheter maintenant",
+    "product.soldOut":"Épuisé",
+    "categories.eyebrow":"Style par style","categories.title":"Catégories",
+    "cat.classic":"Classique","cat.luxury":"Luxe","cat.casual":"Décontracté","cat.evening":"Soirée","cat.office":"Bureau","cat.travel":"Voyage",
+    "why.eyebrow":"Notre promesse","why.title":"Pourquoi nous choisir",
+    "why.quality.title":"Qualité premium","why.quality.text":"Fabriqué avec les meilleurs matériaux, conçu pour durer.",
+    "why.delivery.title":"Livraison rapide","why.delivery.text":"Livraison partout dans le pays, directement chez vous.",
+    "why.payment.title":"Paiement sécurisé","why.payment.text":"Paiement à la livraison — payez seulement à réception.",
+    "why.returns.title":"Retours faciles","why.returns.text":"Pas convaincue ? Retour possible sous 7 jours.",
+    "why.satisfaction.title":"Satisfaction client","why.satisfaction.text":"Des milliers de clientes conquises à travers le pays.",
+    "why.authentic.title":"Produits authentiques","why.authentic.text":"Chaque pièce vérifiée pour sa qualité et son savoir-faire.",
+    "bestsellers.eyebrow":"Coup de cœur","bestsellers.title":"Meilleures ventes",
+    "reviews.eyebrow":"Témoignages","reviews.title":"Avis de nos clientes",
+    "newsletter.title":"Rejoignez le","newsletter.titleAccent":"Cercle Virella",
+    "newsletter.subtitle":"Soyez informée en avant-première des nouveautés et ventes privées.",
+    "newsletter.placeholder":"votre@email.com","newsletter.submit":"S'abonner",
+    "newsletter.success":"Bienvenue dans le cercle !",
+    "contact.eyebrow":"Restons en contact","contact.title":"Contactez-nous",
+    "contact.phone":"Téléphone","contact.email":"E-mail","contact.location":"Localisation",
+    "contact.instagram":"Instagram","contact.facebook":"Facebook","contact.whatsapp":"WhatsApp",
+    "footer.tagline":"Des sacs intemporels façonnés pour la femme moderne.",
+    "footer.linksTitle":"Liens rapides","footer.serviceTitle":"Service client","footer.policiesTitle":"Politiques",
+    "footer.contactUs":"Nous contacter","footer.shipping":"Livraison","footer.returns":"Retours",
+    "footer.privacy":"Confidentialité","footer.terms":"Conditions","footer.rights":"Virella. Tous droits réservés.",
+    "cart.title":"Votre panier","cart.subtotal":"Sous-total","cart.checkout":"Passer la commande","cart.empty":"Votre panier est vide.",
+    "checkout.title":"Commande","checkout.subtitle":"Paiement à la livraison — réglez à réception de votre sac.",
+    "checkout.name":"Nom complet","checkout.phone":"Numéro de téléphone","checkout.wilaya":"Wilaya",
+    "checkout.wilayaPlaceholder":"Choisissez votre wilaya",
+    "checkout.address":"Adresse (rue, commune…)","checkout.notes":"Notes (optionnel — couleur préférée, etc.)",
+    "checkout.subtotal":"Sous-total","checkout.shipping":"Livraison","checkout.total":"Total",
+    "checkout.submit":"Confirmer la commande","checkout.submitting":"Envoi en cours…",
+    "checkout.errorRequired":"Merci de remplir tous les champs obligatoires.",
+    "checkout.errorSubmit":"Une erreur est survenue lors de l'envoi. Veuillez réessayer.",
+    "checkout.successTitle":"Commande confirmée","checkout.successText":"Merci ! Notre équipe vous contactera bientôt pour confirmer la livraison.",
+    "toast.addedToCart":"Ajouté au panier","toast.wishlistAdded":"Ajouté aux favoris","toast.wishlistRemoved":"Retiré des favoris",
+    "reviews.r1":"La qualité a dépassé mes attentes. On dirait un vrai sac de créateur !",
+    "reviews.r2":"Livraison rapide et le cuir est magnifique. Je recommande déjà ma deuxième commande.",
+    "reviews.r3":"Le service client a été formidable, et le sac est encore plus beau en vrai.",
+    "reviews.r4":"Élégant, pratique, et un prix très juste pour cette qualité.",
+  },
+  ar: {
+    "nav.home":"الرئيسية","nav.collection":"المجموعة","nav.bestsellers":"الأكثر مبيعًا",
+    "nav.new":"وصل حديثًا","nav.about":"من نحن","nav.contact":"تواصل معنا",
+    "a11y.search":"بحث",
+    "hero.eyebrow":"مجموعة جديدة",
+    "hero.title":"حقائب نسائية فاخرة، <em>بروح مستقبلية</em>",
+    "hero.subtitle":"أناقة خالدة صُممت للمرأة العصرية — بين حرفية أصيلة وروح مستقبلية.",
+    "hero.cta1":"تسوقي الآن","hero.cta2":"اكتشفي المجموعة",
+    "hero.stat1":"موديل","hero.stat2":"عميلة راضية","hero.stat3":"تقييم الخدمة",
+    "collection.eyebrow":"مجموعتنا","collection.title":"حقائب مميزة",
+    "collection.subtitle":"كل قطعة تم اختيارها بعناية لتُبرز أناقتك.",
+    "collection.all":"الكل",
+    "collection.loading":"جارٍ تحميل أحدث تشكيلتنا…",
+    "collection.error":"تعذّر تحميل المجموعة. يرجى تحديث الصفحة.",
+    "collection.empty":"لا توجد منتجات في هذه الفئة حاليًا.",
+    "product.quickview":"عرض سريع","product.addToCart":"أضيفي للسلة","product.buyNow":"اشتري الآن",
+    "product.soldOut":"نفذت الكمية",
+    "categories.eyebrow":"تسوقي حسب الستايل","categories.title":"الفئات",
+    "cat.classic":"كلاسيكي","cat.luxury":"فاخر","cat.casual":"عصري","cat.evening":"سهرة","cat.office":"عمل","cat.travel":"سفر",
+    "why.eyebrow":"التزامنا","why.title":"لماذا تختارين فيريلا",
+    "why.quality.title":"جودة فائقة","why.quality.text":"مصنوعة من أجود الخامات لتدوم طويلًا.",
+    "why.delivery.title":"توصيل سريع","why.delivery.text":"توصيل إلى جميع الولايات، مباشرة إلى باب منزلك.",
+    "why.payment.title":"دفع آمن","why.payment.text":"الدفع عند الاستلام — ادفعي فقط عند استلام الطلب.",
+    "why.returns.title":"إرجاع سهل","why.returns.text":"غير راضية؟ يمكنك الإرجاع خلال 7 أيام.",
+    "why.satisfaction.title":"رضا العميلات","why.satisfaction.text":"آلاف العميلات الراضيات في جميع أنحاء البلاد.",
+    "why.authentic.title":"منتجات أصلية","why.authentic.text":"كل قطعة تم التحقق من جودتها وحرفيتها.",
+    "bestsellers.eyebrow":"الأكثر تفضيلًا","bestsellers.title":"الأكثر مبيعًا",
+    "reviews.eyebrow":"شهادات","reviews.title":"آراء عميلاتنا",
+    "newsletter.title":"انضمي إلى","newsletter.titleAccent":"نادي فيريلا",
+    "newsletter.subtitle":"كوني أول من يعلم بالمنتجات الجديدة والعروض الخاصة.",
+    "newsletter.placeholder":"بريدك@الإلكتروني.com","newsletter.submit":"اشتراك",
+    "newsletter.success":"مرحبًا بك في النادي!",
+    "contact.eyebrow":"ابقي على تواصل","contact.title":"تواصلي معنا",
+    "contact.phone":"الهاتف","contact.email":"البريد الإلكتروني","contact.location":"الموقع",
+    "contact.instagram":"إنستغرام","contact.facebook":"فيسبوك","contact.whatsapp":"واتساب",
+    "footer.tagline":"حقائب خالدة صُممت للمرأة العصرية.",
+    "footer.linksTitle":"روابط سريعة","footer.serviceTitle":"خدمة العملاء","footer.policiesTitle":"السياسات",
+    "footer.contactUs":"تواصلي معنا","footer.shipping":"التوصيل","footer.returns":"الإرجاع",
+    "footer.privacy":"الخصوصية","footer.terms":"الشروط","footer.rights":"فيريلا. جميع الحقوق محفوظة.",
+    "cart.title":"سلتك","cart.subtotal":"المجموع الفرعي","cart.checkout":"إتمام الطلب","cart.empty":"سلتك فارغة.",
+    "checkout.title":"إتمام الطلب","checkout.subtitle":"الدفع عند الاستلام — ادفعي عند استلام حقيبتك.",
+    "checkout.name":"الاسم الكامل","checkout.phone":"رقم الهاتف","checkout.wilaya":"الولاية",
+    "checkout.wilayaPlaceholder":"اختاري ولايتك",
+    "checkout.address":"العنوان (الشارع، البلدية...)","checkout.notes":"ملاحظات (اختياري — اللون المفضل، إلخ)",
+    "checkout.subtotal":"المجموع الفرعي","checkout.shipping":"التوصيل","checkout.total":"المجموع الكلي",
+    "checkout.submit":"تأكيد الطلب","checkout.submitting":"جارٍ الإرسال…",
+    "checkout.errorRequired":"يرجى ملء جميع الحقول المطلوبة.",
+    "checkout.errorSubmit":"حدث خطأ أثناء إرسال الطلب. يرجى المحاولة مرة أخرى.",
+    "checkout.successTitle":"تم تأكيد الطلب","checkout.successText":"شكرًا لك! سيتواصل معك فريقنا قريبًا لتأكيد التوصيل.",
+    "toast.addedToCart":"أُضيف إلى السلة","toast.wishlistAdded":"أُضيف إلى المفضلة","toast.wishlistRemoved":"أُزيل من المفضلة",
+    "reviews.r1":"الجودة فاقت توقعاتي. تبدو وكأنها حقيبة من دار أزياء حقيقية!",
+    "reviews.r2":"توصيل سريع والجلد رائع. طلبت واحدة أخرى بالفعل.",
+    "reviews.r3":"خدمة العملاء كانت ممتازة، والحقيبة أجمل من الصور.",
+    "reviews.r4":"أنيقة وعملية، وبسعر عادل جدًا مقابل هذه الجودة.",
+  }
+};
+
+let currentLang = "fr";
+function t(key){ return (I18N[currentLang] && I18N[currentLang][key]) || I18N.fr[key] || key; }
+
+/* ============================================================
+   State
+   ============================================================ */
+let products = [];       // {id,name,price,imageUrl,category,description,available}
+let cart = [];           // {id, quantity}
+let wishlist = new Set();
+let activeCategory = "__all__";
+let buyNowProduct = null; // when set, checkout targets only this product (+qty)
+let buyNowQty = 1;
+
+function findProduct(id){ return products.find(p => p.id === id); }
+
+/* ============================================================
+   CSV loading + Google Drive helpers
+   ============================================================ */
+function driveImageUrl(url){
+  if(!url) return "";
+  const m = url.match(/\/d\/([a-zA-Z0-9_-]+)/) || url.match(/[?&]id=([a-zA-Z0-9_-]+)/);
+  if(m && m[1]) return `https://drive.google.com/thumbnail?id=${m[1]}&sz=w1000`;
+  return url;
+}
+function driveImageFallback(url){
+  if(!url) return "";
+  const m = url.match(/\/d\/([a-zA-Z0-9_-]+)/) || url.match(/[?&]id=([a-zA-Z0-9_-]+)/);
+  if(m && m[1]) return `https://lh3.googleusercontent.com/d/${m[1]}=w1000`;
+  return url;
+}
+function normalizeHeader(h){ return h.trim().toLowerCase().replace(/[^a-z]/g,""); }
+
+/* Minimal, dependency-free RFC4180-style CSV parser.
+   Handles quoted fields, escaped "" quotes, commas & newlines inside quotes,
+   and both \r\n and \n line endings. No external CDN/script required. */
+function parseCsv(text){
+  const rows = [];
+  let row = [];
+  let field = "";
+  let inQuotes = false;
+  const s = text.replace(/\r\n/g, "\n").replace(/\r/g, "\n");
+  for(let i = 0; i < s.length; i++){
+    const c = s[i];
+    if(inQuotes){
+      if(c === '"'){
+        if(s[i+1] === '"'){ field += '"'; i++; }
+        else{ inQuotes = false; }
+      }else{
+        field += c;
+      }
+    }else{
+      if(c === '"'){ inQuotes = true; }
+      else if(c === ','){ row.push(field); field = ""; }
+      else if(c === '\n'){ row.push(field); rows.push(row); row = []; field = ""; }
+      else{ field += c; }
+    }
+  }
+  row.push(field);
+  rows.push(row);
+  return rows.filter(r => !(r.length === 1 && r[0].trim() === ""));
+}
+
+function loadProducts(){
+  return fetch(PRODUCTS_CSV_URL, { cache: "no-store" })
+    .then(res => {
+      if(!res.ok) throw new Error("CSV fetch failed: " + res.status);
+      return res.text();
+    })
+    .then(text => {
+      const rows = parseCsv(text);
+      if(!rows || rows.length < 2) return [];
+      const headers = rows[0].map(normalizeHeader);
+      const idx = {
+        id: headers.indexOf("id"),
+        name: headers.indexOf("name"),
+        price: headers.indexOf("price"),
+        image: headers.findIndex(h => h.includes("imag") || h.includes("image")),
+        category: headers.indexOf("category"),
+        description: headers.indexOf("description"),
+        available: headers.indexOf("disponible"),
+      };
+      const list = [];
+      for(const cols of rows.slice(1)){
+        const name = idx.name >= 0 ? (cols[idx.name] || "").trim() : "";
+        if(!name) continue;
+        const priceRaw = idx.price >= 0 ? cols[idx.price] : "0";
+        const price = Number(String(priceRaw).replace(/[^\d.]/g,"")) || 0;
+        const availRaw = idx.available >= 0 ? (cols[idx.available] || "").trim().toLowerCase() : "oui";
+        list.push({
+          id: (idx.id >= 0 && cols[idx.id] && cols[idx.id].trim()) ? cols[idx.id].trim() : name,
+          name,
+          price,
+          imageUrl: idx.image >= 0 ? (cols[idx.image] || "").trim() : "",
+          category: idx.category >= 0 && cols[idx.category] && cols[idx.category].trim() ? cols[idx.category].trim() : "Collection",
+          description: idx.description >= 0 ? (cols[idx.description] || "").trim() : "",
+          available: !["non","no","false","0"].includes(availRaw),
+        });
+      }
+      return list;
+    });
+}
+
+/* ============================================================
+   Rendering — Product grid & filters
+   ============================================================ */
+function escapeHtml(str){
+  return String(str).replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+}
+function starRow(){ return "★★★★★"; }
+
+function renderFilters(){
+  const el = document.getElementById("filters");
+  const cats = Array.from(new Set(products.map(p => p.category).filter(Boolean)));
+  if(cats.length <= 1){ el.innerHTML = ""; return; }
+  const chips = [{ key:"__all__", label: t("collection.all") }, ...cats.map(c => ({ key:c, label:c }))];
+  el.innerHTML = chips.map(c =>
+    `<button class="filter-chip ${activeCategory===c.key?'active':''}" data-cat="${escapeHtml(c.key)}">${escapeHtml(c.label)}</button>`
+  ).join("");
+  el.querySelectorAll(".filter-chip").forEach(btn => {
+    btn.addEventListener("click", () => {
+      activeCategory = btn.getAttribute("data-cat");
+      renderFilters();
+      renderProductGrid();
+    });
+  });
+}
+
+function productCardHtml(p){
+  const img = driveImageUrl(p.imageUrl);
+  const isWished = wishlist.has(p.id);
+  return `
+  <div class="card in-view" data-id="${escapeHtml(p.id)}">
+    <div class="card-media">
+      ${img ? `<img src="${escapeHtml(img)}" alt="${escapeHtml(p.name)}" loading="lazy" onerror="handleImgError(this,'${escapeHtml(p.imageUrl)}')">` : ""}
+      ${!p.available ? `<span class="card-badge">${t("product.soldOut")}</span>` : ""}
+      <button class="wishlist-btn ${isWished?'active':''}" data-action="wishlist" data-id="${escapeHtml(p.id)}" aria-label="Wishlist">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="${isWished?'currentColor':'none'}" stroke="currentColor" stroke-width="2"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 0 0-7.8 7.8l1 1L12 21l7.8-7.8 1-1a5.5 5.5 0 0 0 0-7.6Z"/></svg>
+      </button>
+      <button class="card-quick" data-action="buynow" data-id="${escapeHtml(p.id)}">${t("product.quickview")}</button>
+    </div>
+    <div class="card-body">
+      <p class="card-cat">${escapeHtml(p.category)}</p>
+      <h3 class="card-name" translate="no">${escapeHtml(p.name)}</h3>
+      ${p.description ? `<p class="card-desc">${escapeHtml(p.description)}</p>` : ""}
+      <div class="card-stars">${starRow()}</div>
+      <div class="card-price-row">
+        <span class="card-price" translate="no">${p.price.toLocaleString()} ${CURRENCY}</span>
+      </div>
+      <div class="card-actions">
+        <button class="btn-outline-dark" data-action="addcart" data-id="${escapeHtml(p.id)}" ${!p.available?'disabled':''}>${t("product.addToCart")}</button>
+        <button class="btn-solid-dark" data-action="buynow" data-id="${escapeHtml(p.id)}" ${!p.available?'disabled':''}>${t("product.buyNow")}</button>
+      </div>
+    </div>
+  </div>`;
+}
+
+function handleImgError(imgEl, originalUrl){
+  if(!imgEl.dataset.fallbackTried){
+    imgEl.dataset.fallbackTried = "1";
+    imgEl.src = driveImageFallback(originalUrl);
+    return;
+  }
+  if(!imgEl.dataset.rawTried){
+    imgEl.dataset.rawTried = "1";
+    imgEl.src = originalUrl;
+    return;
+  }
+  // All attempts failed: remove the broken image, leaving the clean placeholder background.
+  imgEl.style.display = "none";
+}
+
+function renderProductGrid(){
+  const grid = document.getElementById("product-grid");
+  const stateEl = document.getElementById("product-grid-state");
+  const list = activeCategory === "__all__" ? products : products.filter(p => p.category === activeCategory);
+
+  if(list.length === 0){
+    grid.innerHTML = "";
+    stateEl.innerHTML = `<p class="state-msg">${t("collection.empty")}</p>`;
+    return;
+  }
+  stateEl.innerHTML = "";
+  grid.innerHTML = list.map(productCardHtml).join("");
+  bindGridActions(grid);
+}
+
+function bindGridActions(container){
+  container.querySelectorAll('[data-action="addcart"]').forEach(btn => {
+    btn.addEventListener("click", () => addToCart(btn.getAttribute("data-id"), 1));
+  });
+  container.querySelectorAll('[data-action="buynow"]').forEach(btn => {
+    btn.addEventListener("click", () => openBuyNow(btn.getAttribute("data-id")));
+  });
+  container.querySelectorAll('[data-action="wishlist"]').forEach(btn => {
+    btn.addEventListener("click", () => toggleWishlist(btn.getAttribute("data-id")));
+  });
+}
+
+function setProductGridLoading(){
+  document.getElementById("product-grid").innerHTML = "";
+  document.getElementById("product-grid-state").innerHTML =
+    `<div class="state-msg"><div class="spinner"></div>${t("collection.loading")}</div>`;
+}
+function setProductGridError(){
+  document.getElementById("product-grid").innerHTML = "";
+  document.getElementById("product-grid-state").innerHTML = `<p class="state-msg">${t("collection.error")}</p>`;
+}
+
+/* ============================================================
+   Rendering — Categories / Why us / Contact (static content)
+   ============================================================ */
+const CATEGORY_ICONS = [
+  ["👜","cat.classic"], ["💎","cat.luxury"], ["🌸","cat.casual"],
+  ["✨","cat.evening"], ["💼","cat.office"], ["🧳","cat.travel"],
+];
+function renderCategories(){
+  document.getElementById("cat-grid").innerHTML = CATEGORY_ICONS.map(([icon,key]) => `
+    <a href="#collection" class="cat-card reveal in-view">
+      <span class="cat-icon">${icon}</span>
+      <span>${t(key)}</span>
+    </a>`).join("");
+}
+
+const WHY_ICONS = [
+  ["why.quality", `<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 3 6 6 6-6M6 3l6 18 6-18M6 3H2l4 9-4 9h4"/></svg>`],
+  ["why.delivery", `<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="1" y="7" width="15" height="10" rx="1"/><path d="M16 10h4l3 3v4h-7"/><circle cx="6" cy="19" r="2"/><circle cx="18" cy="19" r="2"/></svg>`],
+  ["why.payment", `<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 10h18M7 15h4"/></svg>`],
+  ["why.returns", `<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12a9 9 0 1 0 3-6.7"/><path d="M3 4v5h5"/></svg>`],
+  ["why.satisfaction", `<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 0 0-7.8 7.8l1 1L12 21l7.8-7.8 1-1a5.5 5.5 0 0 0 0-7.6Z"/></svg>`],
+  ["why.authentic", `<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="6"/><path d="M9 13.5 6 22l6-3 6 3-3-8.5"/></svg>`],
+];
+function renderWhyUs(){
+  document.getElementById("why-grid").innerHTML = WHY_ICONS.map(([key,icon]) => `
+    <div class="why-card reveal in-view">
+      <div class="why-icon">${icon}</div>
+      <h3>${t(key+".title")}</h3>
+      <p>${t(key+".text")}</p>
+    </div>`).join("");
+}
+
+const CONTACT_ITEMS = [
+  ["contact.phone", "+213 555 123 456", `<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3.1-8.7A2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.3 1.8.6 2.7a2 2 0 0 1-.5 2.1L8 9.6a16 16 0 0 0 6 6l1.1-1.1a2 2 0 0 1 2.1-.5c.9.3 1.8.5 2.7.6a2 2 0 0 1 1.7 2Z"/></svg>`],
+  ["contact.email", "hello@virella.store", `<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2 7 10 6 10-6"/></svg>`],
+  ["contact.location", "Alger, Algérie", `<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>`],
+  ["contact.instagram", "@virella.store", `<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1"/></svg>`],
+  ["contact.facebook", "Virella", `<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>`],
+  ["contact.whatsapp", "+213 555 123 456", `<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>`],
+];
+function renderContact(){
+  document.getElementById("contact-grid").innerHTML = CONTACT_ITEMS.map(([key,value,icon]) => `
+    <div class="contact-card reveal in-view">
+      <div class="contact-icon">${icon}</div>
+      <div><p class="contact-label">${t(key)}</p><p class="contact-value" translate="no">${value}</p></div>
+    </div>`).join("");
+}
+
+/* ============================================================
+   Rendering — Best sellers marquee & Reviews marquee
+   ============================================================ */
+function renderBestSellers(){
+  const track = document.getElementById("best-sellers-track");
+  if(products.length === 0){ track.innerHTML = ""; return; }
+  const loop = [...products, ...products];
+  track.innerHTML = loop.map(p => {
+    const img = driveImageUrl(p.imageUrl);
+    return `
+    <button class="mini-card" data-action="buynow" data-id="${escapeHtml(p.id)}">
+      ${img ? `<img src="${escapeHtml(img)}" alt="${escapeHtml(p.name)}" loading="lazy" onerror="handleImgError(this,'${escapeHtml(p.imageUrl)}')">` : ""}
+      <div class="mini-card-body">
+        <p translate="no">${escapeHtml(p.name)}</p>
+        <p class="mini-card-price" translate="no">${p.price.toLocaleString()} ${CURRENCY}</p>
+      </div>
+    </button>`;
+  }).join("");
+  bindGridActions(track);
+}
+
+const REVIEW_KEYS = [
+  ["reviews.r1","A."], ["reviews.r2","S."], ["reviews.r3","Y."], ["reviews.r4","L."],
+];
+function renderReviews(){
+  const track = document.getElementById("reviews-track");
+  const loop = [...REVIEW_KEYS, ...REVIEW_KEYS];
+  track.innerHTML = loop.map(([key, initial]) => `
+    <div class="review-card">
+      <p class="quote">"${t(key)}"</p>
+      <div class="review-who">
+        <div class="review-avatar">${initial}</div>
+        <div>
+          <p class="review-name">${initial === "A." ? "Amina K." : initial === "S." ? "Sarah B." : initial === "Y." ? "Yasmine R." : "Lina M."}</p>
+          <p class="review-stars">★★★★★</p>
+        </div>
+      </div>
+    </div>`).join("");
+}
+
+/* ============================================================
+   Cart
+   ============================================================ */
+function addToCart(id, qty){
+  const existing = cart.find(l => l.id === id);
+  if(existing) existing.quantity += qty;
+  else cart.push({ id, quantity: qty });
+  updateCartUI();
+  showToast(t("toast.addedToCart"));
+}
+function updateCartQty(id, qty){
+  if(qty <= 0){ cart = cart.filter(l => l.id !== id); }
+  else{
+    const line = cart.find(l => l.id === id);
+    if(line) line.quantity = qty;
+  }
+  updateCartUI();
+}
+function removeFromCart(id){
+  cart = cart.filter(l => l.id !== id);
+  updateCartUI();
+}
+function cartTotal(){
+  return cart.reduce((sum,l) => { const p = findProduct(l.id); return sum + (p ? p.price*l.quantity : 0); }, 0);
+}
+function cartCount(){
+  return cart.reduce((s,l) => s+l.quantity, 0);
+}
+function toggleWishlist(id){
+  if(wishlist.has(id)){ wishlist.delete(id); showToast(t("toast.wishlistRemoved")); }
+  else{ wishlist.add(id); showToast(t("toast.wishlistAdded")); }
+  updateWishlistUI();
+  renderProductGrid();
+}
+function updateWishlistUI(){
+  const badge = document.getElementById("wishlist-count");
+  if(wishlist.size > 0){ badge.style.display="grid"; badge.textContent = wishlist.size; }
+  else{ badge.style.display="none"; }
+}
+
+function renderCartDrawer(){
+  const body = document.getElementById("cart-body");
+  const foot = document.getElementById("cart-foot");
+  if(cart.length === 0){
+    body.innerHTML = `<div class="drawer-empty"><span class="icon">🛍️</span><p>${t("cart.empty")}</p></div>`;
+    foot.style.display = "none";
+    return;
+  }
+  foot.style.display = "block";
+  body.innerHTML = cart.map(line => {
+    const p = findProduct(line.id);
+    if(!p) return "";
+    const img = driveImageUrl(p.imageUrl);
+    return `
+    <div class="cart-line">
+      ${img ? `<img src="${escapeHtml(img)}" alt="${escapeHtml(p.name)}" onerror="handleImgError(this,'${escapeHtml(p.imageUrl)}')">` : ""}
+      <div class="cart-line-info">
+        <p class="name" translate="no">${escapeHtml(p.name)}</p>
+        <p class="price" translate="no">${p.price.toLocaleString()} ${CURRENCY}</p>
+        <div class="qty-stepper">
+          <button data-action="dec" data-id="${escapeHtml(p.id)}">−</button>
+          <span translate="no">${line.quantity}</span>
+          <button data-action="inc" data-id="${escapeHtml(p.id)}">+</button>
+          <button class="cart-line-remove" data-action="remove" data-id="${escapeHtml(p.id)}" aria-label="Remove">✕</button>
+        </div>
+      </div>
+    </div>`;
+  }).join("");
+
+  body.querySelectorAll('[data-action="dec"]').forEach(b => b.addEventListener("click", () => {
+    const line = cart.find(l => l.id === b.getAttribute("data-id"));
+    if(line) updateCartQty(line.id, line.quantity - 1);
+  }));
+  body.querySelectorAll('[data-action="inc"]').forEach(b => b.addEventListener("click", () => {
+    const line = cart.find(l => l.id === b.getAttribute("data-id"));
+    if(line) updateCartQty(line.id, line.quantity + 1);
+  }));
+  body.querySelectorAll('[data-action="remove"]').forEach(b => b.addEventListener("click", () => removeFromCart(b.getAttribute("data-id"))));
+
+  document.getElementById("cart-total").textContent = `${cartTotal().toLocaleString()} ${CURRENCY}`;
+}
+
+function updateCartUI(){
+  const badge = document.getElementById("cart-count");
+  const count = cartCount();
+  if(count > 0){ badge.style.display="grid"; badge.textContent = count; }
+  else{ badge.style.display="none"; }
+  renderCartDrawer();
+}
+
+/* ============================================================
+   Checkout modal
+   ============================================================ */
+function openBuyNow(id){
+  buyNowProduct = findProduct(id);
+  buyNowQty = 1;
+  closeCartDrawer();
+  renderCheckoutModal();
+  openOverlay();
+  document.getElementById("checkout-modal").classList.add("open");
+}
+function openCartCheckout(){
+  if(cart.length === 0) return;
+  buyNowProduct = null;
+  renderCheckoutModal();
+  document.getElementById("checkout-modal").classList.add("open");
+}
+function closeCheckoutModal(){
+  document.getElementById("checkout-modal").classList.remove("open");
+  if(!document.getElementById("cart-drawer").classList.contains("open")) closeOverlay();
+  buyNowProduct = null;
+}
+
+function getCheckoutLines(){
+  if(buyNowProduct) return [{ product: buyNowProduct, quantity: buyNowQty }];
+  return cart.map(l => ({ product: findProduct(l.id), quantity: l.quantity })).filter(l => l.product);
+}
+
+function renderCheckoutModal(status){
+  status = status || "form";
+  const lines = getCheckoutLines();
+  const subtotal = lines.reduce((s,l) => s + l.product.price*l.quantity, 0);
+  const total = lines.length > 0 ? subtotal + SHIPPING_COST : 0;
+  const modal = document.getElementById("checkout-modal");
+
+  if(status === "success"){
+    modal.innerHTML = `
+      <button class="modal-close" id="checkout-close" aria-label="Close">✕</button>
+      <div class="checkout-success">
+        <div class="check-icon">
+          <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg>
+        </div>
+        <h3 style="font-family:var(--ff-display); font-size:1.4rem; margin:0;">${t("checkout.successTitle")}</h3>
+        <p style="color:var(--ink-soft); font-size:.9rem; max-width:380px;">${t("checkout.successText")}</p>
+      </div>`;
+    document.getElementById("checkout-close").addEventListener("click", closeCheckoutModal);
+    return;
+  }
+
+  const lineRows = lines.map(l => {
+    const img = driveImageUrl(l.product.imageUrl);
+    const isBuyNow = !!buyNowProduct;
+    return `
+    <div class="order-line">
+      ${img ? `<img src="${escapeHtml(img)}" alt="${escapeHtml(l.product.name)}" onerror="handleImgError(this,'${escapeHtml(l.product.imageUrl)}')">` : ""}
+      <div class="order-line-info">
+        <p class="name" translate="no">${escapeHtml(l.product.name)}</p>
+        <p class="price" translate="no">${l.product.price.toLocaleString()} ${CURRENCY}</p>
+      </div>
+      ${isBuyNow ? `
+        <div class="qty-stepper">
+          <button type="button" data-action="buynow-dec">−</button>
+          <span translate="no">${l.quantity}</span>
+          <button type="button" data-action="buynow-inc">+</button>
+        </div>` : `<span style="font-size:.82rem; color:var(--ink-soft);" translate="no">x${l.quantity}</span>`}
+    </div>`;
+  }).join("");
+
+  modal.innerHTML = `
+    <button class="modal-close" id="checkout-close" aria-label="Close">✕</button>
+    <div class="modal-head">
+      <div>
+        <h3>${t("checkout.title")}</h3>
+        <p>${t("checkout.subtitle")}</p>
+      </div>
+    </div>
+    <form id="checkout-form">
+      <div class="order-summary">
+        ${lineRows}
+        <div class="order-totals">
+          <div class="row"><span>${t("checkout.subtotal")}</span><span translate="no">${subtotal.toLocaleString()} ${CURRENCY}</span></div>
+          <div class="row"><span>${t("checkout.shipping")}</span><span translate="no">${SHIPPING_COST.toLocaleString()} ${CURRENCY}</span></div>
+          <div class="row grand"><span>${t("checkout.total")}</span><span translate="no">${total.toLocaleString()} ${CURRENCY}</span></div>
+        </div>
+      </div>
+
+      <div class="form-grid">
+        <div class="field"><label>${t("checkout.name")} *</label><input type="text" id="f-name" required></div>
+        <div class="field"><label>${t("checkout.phone")} *</label><input type="tel" id="f-phone" required></div>
+      </div>
+      <div class="field">
+        <label>${t("checkout.wilaya")} *</label>
+        <select id="f-wilaya" required>
+          <option value="" disabled selected>${t("checkout.wilayaPlaceholder")}</option>
+          ${WILAYAS.map(w => `<option value="${escapeHtml(w)}">${escapeHtml(w)}</option>`).join("")}
+        </select>
+      </div>
+      <div class="field"><label>${t("checkout.address")} *</label><input type="text" id="f-address" required></div>
+      <div class="field"><label>${t("checkout.notes")}</label><textarea id="f-notes" rows="2"></textarea></div>
+
+      <p class="field-error" id="checkout-error">${t("checkout.errorRequired")}</p>
+
+      <button type="submit" class="btn btn-primary btn-block" id="checkout-submit-btn">
+        <span>${t("checkout.submit")}</span>
+      </button>
+    </form>`;
+
+  document.getElementById("checkout-close").addEventListener("click", closeCheckoutModal);
+
+  if(buyNowProduct){
+    modal.querySelector('[data-action="buynow-dec"]').addEventListener("click", () => {
+      buyNowQty = Math.max(1, buyNowQty - 1);
+      renderCheckoutModal();
+    });
+    modal.querySelector('[data-action="buynow-inc"]').addEventListener("click", () => {
+      buyNowQty += 1;
+      renderCheckoutModal();
+    });
+  }
+
+  document.getElementById("checkout-form").addEventListener("submit", handleCheckoutSubmit);
+}
+
+async function handleCheckoutSubmit(e){
+  e.preventDefault();
+  const name = document.getElementById("f-name").value.trim();
+  const phone = document.getElementById("f-phone").value.trim();
+  const wilaya = document.getElementById("f-wilaya").value;
+  const address = document.getElementById("f-address").value.trim();
+  const notes = document.getElementById("f-notes").value.trim();
+  const errorEl = document.getElementById("checkout-error");
+
+  if(!name || !phone || !wilaya || !address){
+    errorEl.textContent = t("checkout.errorRequired");
+    errorEl.classList.add("show");
+    return;
+  }
+  errorEl.classList.remove("show");
+
+  const submitBtn = document.getElementById("checkout-submit-btn");
+  submitBtn.disabled = true;
+  submitBtn.innerHTML = `<span>${t("checkout.submitting")}</span>`;
+
+  const lines = getCheckoutLines();
+  const orderId = "ORD-" + Date.now().toString(36).toUpperCase();
+
+  try{
+    await Promise.all(lines.map(line => fetch(ORDER_ENDPOINT, {
+      method: "POST",
+      headers: { "Content-Type": "text/plain;charset=utf-8" },
+      body: JSON.stringify({
+        orderId, name, phone, wilaya, address, notes,
+        bag: line.product.name,
+        quantity: line.quantity,
+        unitPrice: line.product.price,
+      }),
+    })));
+
+    if(!buyNowProduct) cart = [];
+    updateCartUI();
+    renderCheckoutModal("success");
+  }catch(err){
+    errorEl.textContent = t("checkout.errorSubmit");
+    errorEl.classList.add("show");
+    submitBtn.disabled = false;
+    submitBtn.innerHTML = `<span>${t("checkout.submit")}</span>`;
+  }
+}
+
+/* ============================================================
+   Overlay / Drawer helpers
+   ============================================================ */
+function openOverlay(){ document.getElementById("overlay").classList.add("open"); }
+function closeOverlay(){ document.getElementById("overlay").classList.remove("open"); }
+function openCartDrawer(){ document.getElementById("cart-drawer").classList.add("open"); openOverlay(); }
+function closeCartDrawer(){ document.getElementById("cart-drawer").classList.remove("open"); if(!document.getElementById("checkout-modal").classList.contains("open")) closeOverlay(); }
+
+/* ============================================================
+   Toast
+   ============================================================ */
+let toastTimer = null;
+function showToast(message){
+  const el = document.getElementById("toast");
+  el.textContent = message;
+  el.classList.add("show");
+  clearTimeout(toastTimer);
+  toastTimer = setTimeout(() => el.classList.remove("show"), 2400);
+}
+
+/* ============================================================
+   Language switching (FR default / AR + RTL)
+   ============================================================ */
+function setLang(lang){
+  currentLang = lang;
+  document.documentElement.lang = lang;
+  document.documentElement.dir = lang === "ar" ? "rtl" : "ltr";
+  document.getElementById("lang-fr").classList.toggle("active", lang === "fr");
+  document.getElementById("lang-ar").classList.toggle("active", lang === "ar");
+
+  document.querySelectorAll("[data-i18n]").forEach(el => {
+    el.innerHTML = t(el.getAttribute("data-i18n"));
+  });
+  document.querySelectorAll("[data-i18n-placeholder]").forEach(el => {
+    el.setAttribute("placeholder", t(el.getAttribute("data-i18n-placeholder")));
+  });
+
+  renderFilters();
+  renderProductGrid();
+  renderCategories();
+  renderWhyUs();
+  renderBestSellers();
+  renderReviews();
+  renderContact();
+  updateCartUI();
+
+  try{ localStorage.setItem("virella_lang", lang); }catch(e){}
+}
+
+/* ============================================================
+   Reveal on scroll + particles + scroll-top + sticky header
+   ============================================================ */
+function initScrollReveal(){
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach(entry => { if(entry.isIntersecting) entry.target.classList.add("in-view"); });
+  }, { threshold: 0.12 });
+  document.querySelectorAll(".reveal").forEach(el => io.observe(el));
+}
+
+function initParticles(){
+  const container = document.getElementById("hero-particles");
+  const count = 14;
+  for(let i=0;i<count;i++){
+    const el = document.createElement("span");
+    const size = 4 + Math.random()*6;
+    el.className = "particle";
+    el.style.width = size+"px";
+    el.style.height = size+"px";
+    el.style.left = (Math.random()*100)+"%";
+    el.style.top = (10+Math.random()*70)+"%";
+    el.style.animationDuration = (5+Math.random()*5)+"s";
+    el.style.animationDelay = (Math.random()*4)+"s";
+    container.appendChild(el);
+  }
+}
+
+/* ============================================================
+   Night sky: twinkling starfield + shooting stars (canvas)
+   ============================================================ */
+function initNightSky(){
+  const canvas = document.getElementById("hero-sky");
+  if(!canvas) return;
+  const ctx = canvas.getContext("2d");
+  const hero = document.getElementById("hero");
+  const reduceMotion = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  let stars = [];
+  let shootingStars = [];
+  let w = 0, h = 0, dpr = Math.min(window.devicePixelRatio || 1, 2);
+
+  function resize(){
+    w = hero.offsetWidth;
+    h = hero.offsetHeight;
+    canvas.width = Math.floor(w * dpr);
+    canvas.height = Math.floor(h * dpr);
+    canvas.style.width = w + "px";
+    canvas.style.height = h + "px";
+    ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+    buildStars();
+  }
+
+  function buildStars(){
+    const density = Math.max(90, Math.min(220, Math.floor((w * h) / 6000)));
+    stars = [];
+    for(let i = 0; i < density; i++){
+      const layer = Math.random();
+      stars.push({
+        x: Math.random() * w,
+        y: Math.random() * h * 0.92,
+        r: layer < 0.6 ? Math.random() * 0.9 + 0.4 : (layer < 0.9 ? Math.random() * 1.3 + 1 : Math.random() * 1.8 + 1.6),
+        baseAlpha: Math.random() * 0.5 + 0.35,
+        twinkleSpeed: Math.random() * 0.015 + 0.004,
+        phase: Math.random() * Math.PI * 2,
+        hue: Math.random() < 0.15 ? "teal" : (Math.random() < 0.12 ? "gold" : "pearl")
+      });
+    }
+  }
+
+  function spawnShootingStar(){
+    if(reduceMotion) return;
+    const startX = Math.random() * w * 0.7 + w * 0.1;
+    const startY = Math.random() * h * 0.35;
+    const angle = Math.PI / 4 + (Math.random() * 0.3 - 0.15);
+    const speed = 9 + Math.random() * 6;
+    shootingStars.push({
+      x: startX, y: startY,
+      vx: Math.cos(angle) * speed,
+      vy: Math.sin(angle) * speed,
+      life: 0,
+      maxLife: 34 + Math.random() * 14,
+      len: 90 + Math.random() * 60
+    });
+  }
+
+  function scheduleShootingStars(){
+    const delay = 2600 + Math.random() * 4200;
+    setTimeout(() => {
+      spawnShootingStar();
+      scheduleShootingStars();
+    }, delay);
+  }
+
+  function starColor(hue){
+    if(hue === "teal") return "125,224,211";
+    if(hue === "gold") return "232,207,138";
+    return "243,239,232";
+  }
+
+  let t = 0;
+  function draw(){
+    ctx.clearRect(0, 0, w, h);
+    t += 1;
+
+    // static twinkling stars
+    for(const s of stars){
+      const tw = reduceMotion ? 1 : (Math.sin(t * s.twinkleSpeed + s.phase) * 0.35 + 0.65);
+      const alpha = Math.max(0, Math.min(1, s.baseAlpha * tw));
+      ctx.beginPath();
+      ctx.fillStyle = `rgba(${starColor(s.hue)},${alpha})`;
+      ctx.arc(s.x, s.y, s.r, 0, Math.PI * 2);
+      ctx.fill();
+      if(s.r > 1.7){
+        ctx.beginPath();
+        ctx.fillStyle = `rgba(${starColor(s.hue)},${alpha * 0.18})`;
+        ctx.arc(s.x, s.y, s.r * 3.2, 0, Math.PI * 2);
+        ctx.fill();
+      }
+    }
+
+    // shooting stars
+    shootingStars = shootingStars.filter(sh => sh.life < sh.maxLife);
+    for(const sh of shootingStars){
+      sh.life += 1;
+      sh.x += sh.vx;
+      sh.y += sh.vy;
+      const progress = sh.life / sh.maxLife;
+      const fade = progress < 0.15 ? progress / 0.15 : (1 - (progress - 0.15) / 0.85);
+      const tailX = sh.x - sh.vx * (sh.len / Math.max(1, Math.hypot(sh.vx, sh.vy)));
+      const tailY = sh.y - sh.vy * (sh.len / Math.max(1, Math.hypot(sh.vx, sh.vy)));
+      const grad = ctx.createLinearGradient(sh.x, sh.y, tailX, tailY);
+      grad.addColorStop(0, `rgba(255,255,255,${0.9 * fade})`);
+      grad.addColorStop(0.4, `rgba(232,207,138,${0.5 * fade})`);
+      grad.addColorStop(1, "rgba(232,207,138,0)");
+      ctx.strokeStyle = grad;
+      ctx.lineWidth = 1.6;
+      ctx.beginPath();
+      ctx.moveTo(sh.x, sh.y);
+      ctx.lineTo(tailX, tailY);
+      ctx.stroke();
+      ctx.beginPath();
+      ctx.fillStyle = `rgba(255,255,255,${fade})`;
+      ctx.arc(sh.x, sh.y, 1.6, 0, Math.PI * 2);
+      ctx.fill();
+    }
+
+    requestAnimationFrame(draw);
+  }
+
+  resize();
+  window.addEventListener("resize", resize);
+  requestAnimationFrame(draw);
+  if(!reduceMotion){
+    setTimeout(() => { spawnShootingStar(); scheduleShootingStars(); }, 900);
+  }
+}
+
+function initScrollTop(){
+  const btn = document.getElementById("scroll-top");
+  window.addEventListener("scroll", () => {
+    btn.classList.toggle("show", window.scrollY > 500);
+  });
+  btn.addEventListener("click", () => window.scrollTo({ top:0, behavior:"smooth" }));
+}
+
+/* ============================================================
+   Init / event bindings
+   ============================================================ */
+function bindGlobalEvents(){
+  document.getElementById("cart-btn").addEventListener("click", openCartDrawer);
+  document.getElementById("cart-close").addEventListener("click", closeCartDrawer);
+  document.getElementById("checkout-btn").addEventListener("click", openCartCheckout);
+  document.getElementById("overlay").addEventListener("click", () => {
+    closeCartDrawer();
+    closeCheckoutModal();
+  });
+  document.getElementById("wishlist-btn").addEventListener("click", () => {
+    document.getElementById("collection").scrollIntoView({ behavior:"smooth" });
+  });
+  document.getElementById("nav-toggle").addEventListener("click", () => {
+    const nav = document.getElementById("mobile-nav");
+    nav.classList.toggle("open");
+  });
+  document.querySelectorAll("#mobile-nav a").forEach(a => a.addEventListener("click", () => {
+    document.getElementById("mobile-nav").classList.remove("open");
+  }));
+  document.getElementById("footer-year").textContent = new Date().getFullYear();
+
+  document.getElementById("newsletter-form").addEventListener("submit", (e) => {
+    e.preventDefault();
+    document.getElementById("newsletter-form").style.display = "none";
+    document.getElementById("newsletter-success").style.display = "flex";
+  });
+
+  document.addEventListener("keydown", (e) => {
+    if(e.key === "Escape"){ closeCartDrawer(); closeCheckoutModal(); }
+  });
+}
+
+async function init(){
+  bindGlobalEvents();
+  initParticles();
+  initNightSky();
+  initScrollTop();
+
+  let savedLang = "fr";
+  try{ savedLang = localStorage.getItem("virella_lang") || "fr"; }catch(e){}
+  setLang(savedLang);
+
+  renderCategories();
+  renderWhyUs();
+  renderContact();
+  setProductGridLoading();
+
+  try{
+    products = await loadProducts();
+    renderFilters();
+    renderProductGrid();
+    renderBestSellers();
+  }catch(err){
+    setProductGridError();
+  }
+
+  renderReviews();
+  initScrollReveal();
+}
+
+document.addEventListener("DOMContentLoaded", init);
+</script>
+
+
+</body></html>
